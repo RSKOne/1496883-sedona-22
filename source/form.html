@@ -27,17 +27,17 @@
     </div>
   </header>
   <main class="main">
-    <div class="main__preface">
-      <h1>Оставьте свой отзыв</h1>
-      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </div>
+    <section class="preface">
+      <h1 class="preface__title title">Оставьте свой отзыв</h1>
+      <p class="preface__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
     <form class="review" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="review__name">
         <legend class="review__legend">Представьтесь:</legend>
-        <label class="review__label">ИМЯ*:
+        <label class="review__label">Имя*:
           <input class="review__input" type="text" name="first-name" placeholder="Петр" required>
         </label>
-        <label class="review__label">ФАМИЛИЯ*:
+        <label class="review__label">Фамилия*:
           <input class="review__input" type="text" name="last-name" placeholder="Иванов" required>
         </label>
         <label class="review__label">Отчество:
@@ -76,20 +76,20 @@
       </fieldset>
       <div class="popup-error">
         <div class="popup">
-          <p class="popup__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+          <p class="popup__title">Что-то пошло не так!</p>
           <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="popup__button button">OK</button>
+          <button class="popup__button button" type="button">Oк</button>
         </div>
       </div>
       <div class="popup-success">
         <div class="popup">
           <p class="popup__title">Ваш отзыв отправлен!</p>
           <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <button class="popup__button button">ЗАкРЫТЬ ОКНО</button>
+          <button class="popup__button button" type="button">Закрыть окно</button>
         </div>
       </div>
       <fieldset class="review__places">
-        <legend class="review__legend">посещенные достопримечательности:</legend>
+        <legend class="review__legend">Посещенные достопримечательности:</legend>
         <div class="review__spot-item">
           <label class="review__label review__label--checkbox">
             <input class="review__spot-checkbox" type="checkbox" name="Devil's bridge" checked>
@@ -119,7 +119,7 @@
         <legend class="review__legend">Опишите свои эмоции:</legend>
         <textarea class="review__textarea" name="comments" cols="40" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
       </fieldset>
-      <button class="review__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+      <button class="review__button button" type="submit">Отправить отзыв</button>
     </form>
   </main>
   <footer class="footer">
