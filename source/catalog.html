@@ -27,13 +27,56 @@
     </div>
   </header>
   <main class="main">
-    <div class="main__preface">
-      <h1>Фото и видео</h1>
-      <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-    </div>
-
-
-
+    <section class="preface preface--top">
+      <h1 class="preface__title title">Фото и видео</h1>
+      <p class="preface__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    </section>
+    <section class="gallery">
+      <h2 class="visually-hidden">Галерея</h2>
+      <figure class="biota">
+        <a class="biota__link" href="">
+          <img class="biota__image" src="img/photo-1-mobile.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
+        </a>
+        <figcaption class="biota__caption">Неродные просторы
+          <span class="biota__author">Автор фото: Борис<span>
+        </figcaption>
+        <output class="biota__likes"></output>
+      </figure>
+      <figure class="biota">
+        <a class="biota__link" href="">
+          <img class="biota__image" src="img/photo-2-mobile.jpg" alt="Местная флора на фоне скал">
+        </a>
+        <figcaption class="biota__caption">Местная растительность
+          <span class="biota__author">Автор фото: Сергей<span>
+        </figcaption>
+        <output class="biota__likes"></output>
+      </figure>
+      <figure class="biota">
+        <a class="biota__link" href="">
+          <img class="biota__image" src="img/photo-3-mobile.jpg" alt="Серпантин в лесу">
+        </a>
+        <figcaption class="biota__caption">Дорога на север
+          <span class="biota__author">Автор фото: Петр<span>
+        </figcaption>
+        <output class="biota__likes"></output>
+      </figure>
+      <figure class="biota">
+        <a class="biota__link" href="">
+          <img class="biota__image" src="img/photo-4-mobile.jpg" alt="Мост дьявола на фоне скал">
+        </a>
+        <figcaption class="biota__caption">Мост дьявола
+          <span class="biota__author">Автор фото: Антон<span>
+        </figcaption>
+        <output class="biota__likes" name="sum">13</output>
+      </figure>
+    </section>
+    <section class="presentation">
+      <section class="preface preface--video">
+        <h1 class="preface__title title">Все еще сомневаетесь?</h1>
+        <p class="preface__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </section>
+      <video class="presentation__video" src="" controls preload="metadata" poster="img/video-mobile.jpg"></video>
+    </section>
   </main>
   <footer class="footer">
     <div class="hashtag">
