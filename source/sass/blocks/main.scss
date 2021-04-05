@@ -1,0 +1,11 @@
+.main__popup {
+  &-success {
+    display: none;
+    z-index: 99;
+  }
+
+  &-error {
+    display: none;
+    z-index: 99;
+  }
+}

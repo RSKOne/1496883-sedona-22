@@ -1,0 +1,18 @@
+.welcome-inner {
+  position: relative;
+  width: auto;
+  height: 214px;
+  background-color: $mountainBrown;
+  background-image: url("../../img/back-mobile.jpg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.welcome__image-inner {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

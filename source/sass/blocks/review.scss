@@ -1,0 +1,33 @@
+.review {
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0 20px;
+}
+
+.review__input,
+.review__textarea {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: $lightGrey;
+}
+
+.review__legend {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review__name,
+.review__contacts,
+.review__impressions,
+.review__places,
+.review__comments {
+  width: 320px;
+  margin-bottom: 50px;
+}
+
+.review__contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
