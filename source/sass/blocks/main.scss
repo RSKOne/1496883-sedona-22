@@ -1,3 +1,9 @@
+.main__preface {
+  width: 320px;
+  min-height: 205px;
+  padding: 35px 20px 30px 20px;
+}
+
 .main__popup {
   &-success {
     display: none;
@@ -8,4 +14,14 @@
     display: none;
     z-index: 99;
   }
+}
+
+.main__gallery {
+  width: 320px;
+  padding: 0 20px;
+}
+
+.main__presentation {
+  width: 320px;
+  padding-bottom: 40px;
 }
