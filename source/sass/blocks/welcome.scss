@@ -1,0 +1,18 @@
+.welcome {
+  position: relative;
+  width: auto;
+  height: 389px;
+  background-color: $basicBlue;
+  background-image: url("../../img/back-mobile.jpg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcome__image {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

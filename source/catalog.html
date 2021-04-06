@@ -1,117 +1,120 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Седона</title>
-</head>
-<body class="page-body">
-  <header class="header">
-    <div class="header__logo">
-      <a class="logo">
-        <img class="logo__mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
-      </a>
-    </div>
-    <div class="header__navigation">
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="index.html">Главная</a></li>
-          <li class="navigation__item"><a>Фото и видео</a></li>
-          <li class="navigation__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-body">
+    <header class="header">
+      <div class="header__logo">
+        <a class="logo">
+          <img class="logo__mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
+        </a>
+      </div>
+      <div class="header__navigation">
+        <nav class="navigation">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="index.html">Главная</a></li>
+            <li class="navigation__item"><a>Фото и видео</a></li>
+            <li class="navigation__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Фотографии и видео Седоны и её окрестностей</h1>
+      <div class="main__preface">
+        <section class="preface preface--top">
+          <h2 class="preface__title">Фото и видео</h2>
+          <p class="preface__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </section>
+      </div>
+      <section class="main__gallery">
+        <h2 class="visually-hidden">Галерея</h2>
+        <div class="main__gallery-container">
+          <figure class="biota">
+            <a class="biota__link" href="">
+              <img class="biota__image" src="img/photo-1-mobile.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
+            </a>
+            <figcaption class="biota__caption">Неродные просторы
+              <span class="biota__author">Автор фото: Борис</span>
+            </figcaption>
+          </figure>
+          <output class="biota__likes"></output>
+        </div>
+        <div class="main__gallery-container">
+          <figure class="biota">
+            <a class="biota__link" href="">
+              <img class="biota__image" src="img/photo-2-mobile.jpg" alt="Местная флора на фоне скал">
+            </a>
+            <figcaption class="biota__caption">Местная растительность
+              <span class="biota__author">Автор фото: Сергей</span>
+            </figcaption>
+          </figure>
+          <output class="biota__likes"></output>
+        </div>
+        <div class="main__gallery-container">
+          <figure class="biota">
+            <a class="biota__link" href="">
+              <img class="biota__image" src="img/photo-3-mobile.jpg" alt="Серпантин в лесу">
+            </a>
+            <figcaption class="biota__caption">Дорога на север
+              <span class="biota__author">Автор фото: Петр</span>
+            </figcaption>
+          </figure>
+          <output class="biota__likes"></output>
+        </div>
+        <div class="main__gallery-container">
+          <figure class="biota">
+            <a class="biota__link" href="">
+              <img class="biota__image" src="img/photo-4-mobile.jpg" alt="Мост дьявола на фоне скал">
+            </a>
+            <figcaption class="biota__caption">Мост дьявола
+              <span class="biota__author">Автор фото: Антон</span>
+            </figcaption>
+          </figure>
+          <output class="biota__likes" name="sum">13</output>
+        </div>
+      </section>
+      <section class="main__presentation">
+        <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
+        <section class="preface preface--video">
+          <h2 class="preface__title">Все еще сомневаетесь?</h2>
+          <p class="preface__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </section>
+      </section>
+      <div class="main__presentation-video">
+        <img class="main__presentation-video-image" src="img/video-mobile.jpg" alt="Дорога между гор">
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="hashtag">
+        <span class="hashtag__item">#visitsedona</span>
+      </div>
+      <section class="social-networks">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-networks__list">
+          <li class="social-networks__item">
+            <a class="social-networks__link" href="#" aria-label="Twitter"></a>
+          </li>
+          <li class="social-networks__item">
+            <a class="social-networks__link" href="#" aria-label="Facebook"></a>
+          </li>
+          <li class="social-networks__item">
+            <a class="social-networks__link" href="#" aria-label="YouTube"></a>
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="main">
-    <h1 class="visually-hidden">Фотографии и видео Седоны и её окрестностей</h1>
-    <div class="main__preface">
-      <section class="preface preface--top">
-        <h2 class="preface__title title">Фото и видео</h2>
-        <p class="preface__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
-    </div>
-    <section class="gallery">
-      <h2 class="visually-hidden">Галерея</h2>
-      <div class="gallery__container">
-        <figure class="biota">
-          <a class="biota__link" href="">
-            <img class="biota__image" src="img/photo-1-mobile.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
-          </a>
-          <figcaption class="biota__caption">Неродные просторы
-            <span class="biota__author">Автор фото: Борис</span>
-          </figcaption>
-        </figure>
-        <output class="biota__likes"></output>
+      <div class="copyright">
+        <span>Разработано</span>
+        <img src="img/htmlacademy.svg.svg" alt="Логотип htmlacademy">
       </div>
-      <div class="gallery__container">
-        <figure class="biota">
-          <a class="biota__link" href="">
-            <img class="biota__image" src="img/photo-2-mobile.jpg" alt="Местная флора на фоне скал">
-          </a>
-          <figcaption class="biota__caption">Местная растительность
-            <span class="biota__author">Автор фото: Сергей</span>
-          </figcaption>
-        </figure>
-        <output class="biota__likes"></output>
-      </div>
-      <div class="gallery__container">
-        <figure class="biota">
-          <a class="biota__link" href="">
-            <img class="biota__image" src="img/photo-3-mobile.jpg" alt="Серпантин в лесу">
-          </a>
-          <figcaption class="biota__caption">Дорога на север
-            <span class="biota__author">Автор фото: Петр</span>
-          </figcaption>
-        </figure>
-        <output class="biota__likes"></output>
-      </div>
-      <div class="gallery__container">
-        <figure class="biota">
-          <a class="biota__link" href="">
-            <img class="biota__image" src="img/photo-4-mobile.jpg" alt="Мост дьявола на фоне скал">
-          </a>
-          <figcaption class="biota__caption">Мост дьявола
-            <span class="biota__author">Автор фото: Антон</span>
-          </figcaption>
-        </figure>
-        <output class="biota__likes" name="sum">13</output>
-      </div>
-    </section>
-    <section class="presentation">
-      <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
-      <section class="preface preface--video">
-        <h2 class="preface__title title">Все еще сомневаетесь?</h2>
-        <p class="preface__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      </section>
-      <video class="presentation__video" src="#" controls preload="metadata" poster="img/video-mobile.jpg"></video>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="hashtag">
-     <span>#visitSEDONA</span>
-    </div>
-    <section class="social-networks">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social-networks__list">
-        <li class="social-networks__item">
-          <a class="social-networks__link" href="#" aria-label="Twitter"></a>
-        </li>
-        <li class="social-networks__item">
-          <a class="social-networks__link" href="#" aria-label="Facebook"></a>
-        </li>
-        <li class="social-networks__item">
-          <a class="social-networks__link" href="#" aria-label="YouTube"></a>
-        </li>
-      </ul>
-    </section>
-    <div class="copyright">
-      <span>Разработано</span>
-      <img src="img/htmlacademy.svg.svg" alt="Логотип htmlacademy">
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
