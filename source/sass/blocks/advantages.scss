@@ -1,14 +1,19 @@
-.advantages__city-wrapper,
-.advantages__bridge-wrapper {
+.advantages__content {
   background-color: $basicBlue;
   padding: 30px 20px;
   text-align: center;
 }
 
-.advantages__points-wrapper {
-  background-color: $bgGrey;
-  padding: 20px 30px;
+.advantages__list {
+  padding: 35px 20px 35px 65px;
+  list-style: none;
   text-align: center;
+
+  &--points {
+    background-color: $bgGrey;
+    padding: 20px 30px;
+    text-align: center;
+  }
 }
 
 .advantages__title {
@@ -34,6 +39,7 @@
   }
 }
 
-.advantages__list {
-  padding: 35px 20px 35px 65px;
+.advantages__picture {
+  max-width: 520px;
+  max-height: 260px;
 }
