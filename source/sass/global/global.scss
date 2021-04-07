@@ -1,24 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-*,
-*::before,
-*::after {
+html {
   box-sizing: border-box;
 }
 
-:focus,
-:active {
-  outline: none;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
+*,
+::before,
+::after {
+  box-sizing: inherit;
 }
 
 button {
@@ -28,11 +15,6 @@ button {
 a,
 a:visited {
   text-decoration: none;
-}
-
-ul,
-li {
-  list-style: none;
 }
 
 img {
