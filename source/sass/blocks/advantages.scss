@@ -1,3 +1,11 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .advantages__content {
   background-color: $basicBlue;
   padding: 30px 20px;
@@ -7,12 +15,14 @@
 .advantages__list {
   padding: 35px 20px 35px 65px;
   list-style: none;
-  text-align: center;
+  margin: 0;
+
 
   &--points {
     background-color: $bgGrey;
     padding: 20px 30px;
     text-align: center;
+    align-self: stretch;
   }
 }
 
@@ -39,7 +49,3 @@
   }
 }
 
-.advantages__picture {
-  max-width: 520px;
-  max-height: 260px;
-}
