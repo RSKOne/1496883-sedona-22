@@ -13,6 +13,7 @@
   font-size: 18px;
   font-weight: bold;
   background-color: $lightGrey;
+  border: none;
 }
 
 .review__legend {
@@ -29,6 +30,7 @@
 .review__comments {
   width: 320px;
   margin-bottom: 50px;
+  border: none;
 }
 
 .review__contacts {
@@ -42,3 +44,4 @@
   overflow: hidden;
   resize: both;
 }
+
