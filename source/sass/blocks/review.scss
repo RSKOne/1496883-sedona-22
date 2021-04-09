@@ -5,7 +5,7 @@
   align-items: center;
   font-size: 14px;
   line-height: 26px;
-  margin: 0 20px;
+  padding: 0 20px;
   min-width: 320px;
 }
 
@@ -36,12 +36,8 @@
 .review__places,
 .review__comments {
   min-width: 320px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 50px;
-  border: none;;
-}
-
-.review__name {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  border: none;
 }
