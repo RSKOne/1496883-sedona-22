@@ -1,0 +1,18 @@
+.main__preface {
+  min-width: 320px;
+  min-height: 205px;
+  padding: 30px 20px 30px 20px;
+  text-align: center;
+}
+
+.main__popup {
+  &-success {
+    display: none;
+    z-index: 99;
+  }
+
+  &-error {
+    display: none;
+    z-index: 99;
+  }
+}

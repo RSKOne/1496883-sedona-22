@@ -1,0 +1,43 @@
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 0 20px;
+  min-width: 320px;
+}
+
+.review__input,
+.review__textarea {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: $lightGrey;
+  border: none;
+  margin-left: 10px;
+
+  &::placeholder {
+    color: $basicBlack;
+  }
+}
+
+.review__legend {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.review__name,
+.review__contacts,
+.review__impressions,
+.review__places,
+.review__comments {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  border: none;
+}
