@@ -1,5 +1,5 @@
 .main__preface {
-  width: 320px;
+  min-width: 320px;
   min-height: 205px;
   padding: 35px 20px 30px 20px;
 }
@@ -17,11 +17,11 @@
 }
 
 .main__gallery {
-  width: 320px;
+  min-width: 320px;
   padding: 0 20px;
 }
 
 .main__presentation {
-  width: 320px;
+  min-width: 320px;
   padding-bottom: 40px;
 }
