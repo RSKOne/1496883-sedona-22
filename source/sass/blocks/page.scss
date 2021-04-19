@@ -5,7 +5,6 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $basicBlack;
-  background-color: $basicWhite;
 }
 
 .page__body {
@@ -13,4 +12,5 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+  align-content: center;
 }

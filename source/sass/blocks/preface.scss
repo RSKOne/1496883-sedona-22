@@ -1,8 +1,15 @@
+.preface {
+  text-align: center;
+
+  &--video {
+    margin-bottom: 40px;
+  }
+}
+
 .preface__title {
   font-size: inherit;
   font-weight: bold;
   line-height: 26px;
-  margin-top: 35px;
   margin-bottom: 40px;
 }
 
