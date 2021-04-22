@@ -3,9 +3,42 @@
   min-height: 205px;
   padding: 30px 20px 30px 20px;
   text-align: center;
-}
 
 .main__location {
+  padding: 35px 20px 30px 20px;
+}
+
+.main__popup {
+  &-success {
+    display: none;
+    z-index: 99;
+  }
+
+  &-error {
+    display: none;
+    z-index: 99;
+  }
+}
+
+.main__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  padding: 0 20px;
+}
+
+.main__gallery-container {
+  margin-bottom: 50px;
+}
+
+.main__presentation {
+  min-width: 320px;
+  padding-bottom: 40px;
+}
+
+.main__presentation-video {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

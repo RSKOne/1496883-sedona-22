@@ -9,8 +9,8 @@
   <body class="page-body">
     <header class="header">
       <div class="header__logo">
-        <a class="logo" href="index.html">
-          <img class="logo__mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
+        <a class="header__logo-link">
+          <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
         </a>
       </div>
       <div class="header__navigation">
@@ -28,7 +28,12 @@
       </div>
     </header>
     <main class="main">
-      <h1 class="visually-hidden">Фотографии и видео Седоны и её окрестностей</h1>
+      <div class="main__welcome-inner">
+        <section class="welcome-inner">
+          <h1 class="visually-hidden">Фотографии и видео Седоны и её окрестностей</h1>
+          <img class="welcome__image-inner" src="img/sedona.svg" alt="Надпись Седона">
+        </section>
+      </div>
       <div class="main__preface">
         <section class="preface preface--top">
           <h2 class="preface__title">Фото и видео</h2>
@@ -39,11 +44,13 @@
         <h2 class="visually-hidden">Галерея</h2>
         <div class="main__gallery-container">
           <figure class="biota">
-            <a class="biota__link" href="">
-              <img class="biota__image" src="img/photo-1-mobile.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
-            </a>
+              <a class="biota__link" href="">
+                <div class="biota__image-wrapper">
+                  <img src="img/photo-1-mobile.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
+                </div>
+              </a>
             <figcaption class="biota__caption">Неродные просторы
-              <span class="biota__author">Автор фото: Борис</span>
+              <span class="biota__author">Автор фото:Борис</span>
             </figcaption>
           </figure>
           <output class="biota__likes"></output>
@@ -51,7 +58,9 @@
         <div class="main__gallery-container">
           <figure class="biota">
             <a class="biota__link" href="">
-              <img class="biota__image" src="img/photo-2-mobile.jpg" alt="Местная флора на фоне скал">
+              <div class="biota__image-wrapper">
+                <img src="img/photo-2-mobile.jpg" alt="Местная флора на фоне скал">
+              </div>
             </a>
             <figcaption class="biota__caption">Местная растительность
               <span class="biota__author">Автор фото: Сергей</span>
@@ -62,7 +71,9 @@
         <div class="main__gallery-container">
           <figure class="biota">
             <a class="biota__link" href="">
-              <img class="biota__image" src="img/photo-3-mobile.jpg" alt="Серпантин в лесу">
+              <div class="biota__image-wrapper">
+                <img src="img/photo-3-mobile.jpg" alt="Серпантин в лесу">
+              </div>
             </a>
             <figcaption class="biota__caption">Дорога на север
               <span class="biota__author">Автор фото: Петр</span>
@@ -73,13 +84,15 @@
         <div class="main__gallery-container">
           <figure class="biota">
             <a class="biota__link" href="">
-              <img class="biota__image" src="img/photo-4-mobile.jpg" alt="Мост дьявола на фоне скал">
+              <div class="biota__image-wrapper">
+                <img src="img/photo-4-mobile.jpg" alt="Мост дьявола на фоне скал">
+              </div>
             </a>
             <figcaption class="biota__caption">Мост дьявола
               <span class="biota__author">Автор фото: Антон</span>
             </figcaption>
           </figure>
-          <output class="biota__likes" name="sum">13</output>
+          <output class="biota__likes" name="sum"></output>
         </div>
       </section>
       <section class="main__presentation">
@@ -88,10 +101,10 @@
           <h2 class="preface__title">Все еще сомневаетесь?</h2>
           <p class="preface__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </section>
+        <div class="main__presentation-video">
+          <img src="img/video-mobile.jpg" alt="Дорога между гор">
+        </div>
       </section>
-      <div class="main__presentation-video">
-        <img class="main__presentation-video-image" src="img/video-mobile.jpg" alt="Дорога между гор">
-      </div>
     </main>
     <footer class="footer">
       <div class="hashtag">
