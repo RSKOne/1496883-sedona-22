@@ -1,8 +1,15 @@
 .main__preface {
   min-width: 320px;
   min-height: 205px;
-  padding: 35px 20px 30px 20px;
+  padding: 35px 20px;
+  text-align: center;
+}
 
+.main__location {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main__popup {
