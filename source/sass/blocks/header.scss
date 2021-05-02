@@ -3,7 +3,7 @@
   min-height: 56px;
 }
 
-.header__logo {
+.header__logo-link {
   width: 102px;
   height: 84px;
   position: absolute;
@@ -14,4 +14,37 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 100px;
+  }
+}
+
+.header__logo-mobile {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
