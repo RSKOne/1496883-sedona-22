@@ -3,6 +3,11 @@
   min-height: 205px;
   padding: 35px 20px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .main__location {

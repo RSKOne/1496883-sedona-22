@@ -11,6 +11,11 @@
     height: 518px;
     background-image: url("../../img/back-desktop.jpg.jpg");
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .welcome__image {

@@ -121,6 +121,11 @@
     text-align: center;
     padding: 0;
   }
+
+  @media (min-width: $tablet-width) {
+   align-self: center;
+   max-width: 1200px;
+  }
 }
 
 .advantages__item {
