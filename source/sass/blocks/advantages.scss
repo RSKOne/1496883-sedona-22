@@ -1,19 +1,89 @@
-.advantages__city-wrapper,
-.advantages__bridge-wrapper {
-  background-color: $basicBlue;
-  padding: 30px 20px;
-  text-align: center;
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-.advantages__points-wrapper {
-  background-color: $bgGrey;
-  padding: 20px 30px;
+.advantages__section {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.advantages__content {
+  min-width: 320px;
+  max-width: 768px;
+  min-height: 190px;
+  padding: 40px 20px 35px 20px;
+  background-color: $basicBlue;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+  }
+}
+
+.advantages__content--first {
+  @media (min-width: $tablet-width) {
+    padding: 40px 35px 35px;
+  }
+}
+
+.advantages__content--second {
+  @media (min-width: $tablet-width) {
+    padding: 40px 50px 35px;
+    order: 2;
+  }
+}
+
+.advantages__picture {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages__picture-first-mobile {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__picture-first-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.advantages__picture-second-mobile {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__picture-second-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .advantages__title {
   font-size: inherit;
   font-weight: bold;
+  margin: 0;
   line-height: 26px;
 
   &--light {
@@ -26,7 +96,7 @@
   font-weight: normal;
   line-height: 21px;
   color: $darkText;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 
   &--light {
     color: $basicWhite;
@@ -34,5 +104,113 @@
 }
 
 .advantages__list {
-  padding: 35px 20px 35px 65px;
+  list-style: none;
+  margin: 0;
+  padding: 35px 20px 35px 0;
+
+  &--points {
+    align-self: stretch;
+    background-color: $bgGrey;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    max-width: 1032px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding: 0 0 0 70px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+    padding: 165px 35px 65px;
+  }
+
+  &--house::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    width: 39px;
+    height: 37px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../img/icon-house.svg.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 64px;
+      height: 75px;
+      top: 25%;
+      left: 53%;
+    }
+  }
+
+  &--souvenir::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    width: 32px;
+    height: 38px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../img/icon-gift.svg.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 64px;
+      height: 75px;
+      top: 25%;
+      left: 55%;
+    }
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    width: 40px;
+    height: 34px;
+    transform: translate(-50%, -50%);
+    background-image: url("../../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 64px;
+      height: 75px;
+      top: 25%;
+      left: 53%;
+    }
+  }
+
+  &--points {
+    padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 45px 40px;
+      min-height: 255px;
+    }
+  }
+}
+
+.advantages__item + .advantages__item {
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
