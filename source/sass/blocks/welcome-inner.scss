@@ -1,11 +1,21 @@
 .welcome-inner {
   position: relative;
   width: auto;
-  height: 214px;
+  height: 160px;
   background-color: $mountainBrown;
   background-image: url("../../img/back-mobile.jpg.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @media (min-width: $tablet-width) {
+    height: 300px;
+    background-image: url("../../img/back-desktop.jpg.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .welcome__image-inner {
