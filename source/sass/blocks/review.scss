@@ -3,7 +3,23 @@
   font-size: 14px;
   line-height: 26px;
   padding: 0 20px;
-  min-width: 320px;
+  min-width: 150px;
+  max-width: 520px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-template-rows: 365px 305px 310px 355px 100px;
+    max-width: 1032px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 320px auto;
+    max-width: 1200px;
+    padding: 0 120px;
+  }
 }
 
 .review__legend {
@@ -24,6 +40,10 @@
 
 .review__label + .review__label {
   margin-top: 20px;
+}
+
+.review__label-text {
+  margin-left: 20px;
 }
 
 .review__input,
@@ -47,7 +67,16 @@
   &--contacts {
     flex-basis: 100%;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      flex-basis: 100%;
+    }
   }
+}
+
+.review__textarea {
+  flex-grow: 1;
+  padding: 10px 0 0 20px;
 }
 
 .review__name,
@@ -56,24 +85,89 @@
 .review__places,
 .review__comments {
   border: none;
-  margin: 0;
   padding: 0;
 }
 
 .review__name {
   display: flex;
   flex-direction: column;
-  max-width: 520px;
-  margin: 0 auto;
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1 / 2 / 2 / 3;
+    padding-left: 58px;
+  }
 }
 
 .review__contacts {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  max-width: 520px;
-  margin: 0 auto;
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 2 / 1 / 3 / 3;
+  }
 }
 
+.review__impressions {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+}
+
+.review__places {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 3 / 1 / 4 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 3 / 1 / 4 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+  }
+}
+
+.review__spot-item {
+  @media (min-width: $tablet-width) {
+    width: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+    margin-top: 30px;
+  }
+}
+
+.review__comments {
+  display: flex;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 4 / 1 / 5 / 3;
+  }
+}
+
+.review__button {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 5 / 1 / 6 / 2;
+    width: 325px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 480px;
+  }
+}
