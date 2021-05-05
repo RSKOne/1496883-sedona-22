@@ -9,8 +9,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 320px auto;
-    grid-template-rows: 365px 305px 310px 355px 100px;
+    grid-template-columns: 320px auto auto;
+    grid-template-rows: 365px 305px 310px 355px 60px;
     max-width: 1032px;
     padding: 0 60px;
   }
@@ -94,7 +94,7 @@
   margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 2 / 2 / 4;
     padding-left: 58px;
   }
 }
@@ -106,7 +106,7 @@
   margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 2 / 1 / 3 / 4;
   }
 }
 
@@ -122,18 +122,15 @@
   margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    grid-area: 3 / 1 / 4 / 3;
+    grid-area: 3 / 1 / 4 / 4;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
     justify-content: center;
+    align-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: 3 / 1 / 4 / 3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-area: 3 / 1 / 4 / 4;
     max-width: 1200px;
   }
 }
@@ -154,7 +151,7 @@
   margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    grid-area: 4 / 1 / 5 / 3;
+    grid-area: 4 / 1 / 5 / 4;
   }
 }
 
@@ -163,11 +160,22 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    grid-area: 5 / 1 / 6 / 2;
+    grid-area: 5 / 1 / 6 / 3;
     width: 325px;
+    margin: 0;
   }
 
   @media (min-width: $tablet-width) {
     width: 480px;
+  }
+}
+
+.review__required-fields {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-area: 5 / 3 / 6 / 4;
+    margin-left: auto;
   }
 }
