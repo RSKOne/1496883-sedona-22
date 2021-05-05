@@ -9,9 +9,6 @@
 
   & > fieldset {
     margin-bottom: 50px;
-
-    @media (min-width: $tablet-width) {
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -20,6 +17,7 @@
     grid-template-rows: 330px 300px 250px 276px 58px;
     max-width: 1032px;
     padding: 0 60px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
