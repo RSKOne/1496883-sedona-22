@@ -178,37 +178,50 @@
 
 //--------Radio buttons
 
-.review__radio-item {
+
+.review__radio-button {
+  appearance: none;
+}
+
+.review__radio-button + span {
   position: relative;
-  margin-top: 15px;
-  margin-left: 55px;
+  padding-left: 65px;
+  line-height: 55px;
 }
 
-.review__radio-item + .review__radio-item {
-  margin-top: 50px;
-}
-
-.review__radio-button::before {
+.review__radio-button + span::before {
   content: "";
   position: absolute;
-  display: block;
   width: 48px;
   height: 48px;
-  top: -10px;
-  left: -55px;
-  background-color: $radioGrey;
-  opacity: 0.3;
-  border-radius: 50%;
+  top: 5px;
+  left: 0;
+  border-radius: 100%;
+  background-color: $lightGrey;
 }
 
-.review__radio-button::after {
+.review__radio-button:focus + span::before,
+.review__radio-button:active + span::before {
+  background-color: $radioGrey;
+}
+
+.review__radio-button:hover + span::before {
+  background-color: $midGrey;
+}
+
+.review__radio-button:checked + span::after {
   content: "";
   position: absolute;
-  display: block;
   width: 16px;
   height: 16px;
-  top: 20%;
-  left: -15%;
-  background-color: $basicBlack;
-  border-radius: 50%;
+  top: 53%;
+  left: 24px;
+  transform: translate(-50%, -50%);
+  background-color: $darkText;
+  border-radius: 100%;
+}
+
+.review__radio-button:focus + span::after,
+.review__radio-button:active + span::after {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
