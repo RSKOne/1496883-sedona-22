@@ -67,6 +67,7 @@
   margin-left: 15px;
   flex: auto;
   height: 58px;
+  width: 100%;
 
   &--contacts {
     flex-basis: 100%;
@@ -93,9 +94,6 @@
 }
 
 .review__name {
-  display: flex;
-  flex-direction: column;
-
   @media (min-width: $tablet-width) {
     grid-area: 1 / 2 / 2 / 4;
     height: 280px;
@@ -176,4 +174,41 @@
     grid-area: 5 / 3 / 6 / 4;
     margin-left: auto;
   }
+}
+
+//--------Radio buttons
+
+.review__radio-item {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 55px;
+}
+
+.review__radio-item + .review__radio-item {
+  margin-top: 50px;
+}
+
+.review__radio-button::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  top: -10px;
+  left: -55px;
+  background-color: $radioGrey;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+.review__radio-button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: 20%;
+  left: -15%;
+  background-color: $basicBlack;
+  border-radius: 50%;
 }
