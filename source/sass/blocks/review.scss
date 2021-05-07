@@ -1,12 +1,53 @@
 .review {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
   font-size: 14px;
   line-height: 26px;
   padding: 0 20px;
-  min-width: 320px;
+  min-width: 150px;
+  max-width: 520px;
+  margin: 0 auto;
+
+  & > fieldset {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 320px auto auto;
+    grid-template-rows: 330px 300px 250px 276px 58px;
+    max-width: 1032px;
+    padding: 0 60px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 320px auto;
+    max-width: 1200px;
+    padding: 0 120px;
+  }
+}
+
+.review__legend {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.review__label {
+  display: flex;
+
+  &--contacts {
+    flex-wrap: wrap;
+  }
+}
+
+.review__label + .review__label {
+  margin-top: 20px;
+}
+
+.review__label-text {
+  margin-left: 20px;
 }
 
 .review__input,
@@ -15,29 +56,172 @@
   font-weight: bold;
   background-color: $lightGrey;
   border: none;
-  margin-left: 10px;
+  padding-left: 20px;
 
   &::placeholder {
     color: $basicBlack;
   }
 }
 
-.review__legend {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
+.review__input {
+  margin-left: 15px;
+  flex: auto;
+  height: 58px;
+  width: 100%;
+
+  &--contacts {
+    flex-basis: 100%;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      flex-basis: 100%;
+    }
+  }
 }
 
+.review__textarea {
+  flex-grow: 1;
+  padding: 10px 0 0 20px;
+}
 
 .review__name,
 .review__contacts,
 .review__impressions,
 .review__places,
 .review__comments {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 50px;
   border: none;
+  padding: 0;
+}
+
+.review__name {
+  @media (min-width: $tablet-width) {
+    grid-area: 1 / 2 / 2 / 4;
+    height: 280px;
+    padding-left: 58px;
+  }
+}
+
+.review__contacts {
+  @media (min-width: $tablet-width) {
+    grid-area: 2 / 1 / 3 / 4;
+    height: 250px;
+  }
+}
+
+.review__impressions {
+  @media (min-width: $tablet-width) {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 280px;
+  }
+}
+
+.review__places {
+  @media (min-width: $tablet-width) {
+    grid-area: 3 / 1 / 4 / 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 3 / 1 / 4 / 4;
+    max-width: 1200px;
+  }
+}
+
+.review__spot-item {
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    padding-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+    margin-top: 70px;
+  }
+}
+
+.review__comments {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 4 / 1 / 5 / 4;
+    height: 226px;
+  }
+}
+
+.review__button {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 5 / 1 / 6 / 3;
+    width: 325px;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 480px;
+  }
+}
+
+.review__required-fields {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-area: 5 / 3 / 6 / 4;
+    margin-left: auto;
+  }
+}
+
+//--------Radio buttons
+
+
+.review__radio-button {
+  appearance: none;
+}
+
+.review__radio-button + span {
+  position: relative;
+  padding-left: 65px;
+  line-height: 55px;
+}
+
+.review__radio-button + span::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 5px;
+  left: 0;
+  border-radius: 100%;
+  background-color: $lightGrey;
+}
+
+.review__radio-button:focus + span::before,
+.review__radio-button:active + span::before {
+  background-color: $radioGrey;
+}
+
+.review__radio-button:hover + span::before {
+  background-color: $midGrey;
+}
+
+.review__radio-button:checked + span::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 53%;
+  left: 24px;
+  transform: translate(-50%, -50%);
+  background-color: $darkText;
+  border-radius: 100%;
+}
+
+.review__radio-button:focus + span::after,
+.review__radio-button:active + span::after {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

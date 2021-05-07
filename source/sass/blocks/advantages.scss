@@ -106,10 +106,11 @@
 .advantages__list {
   list-style: none;
   margin: 0;
-  padding: 35px 20px 35px 0;
+  padding: 35px 20px 35px 20px;
 
   &--points {
-    align-self: stretch;
+    width: 100%;
+    max-width: 520px;
     background-color: $bgGrey;
     text-align: center;
     padding: 25px 20px;
@@ -130,7 +131,7 @@
 
 .advantages__item {
   position: relative;
-  padding: 0 0 0 70px;
+  padding: 0 0 0 50px;
 
   @media (min-width: $tablet-width) {
     min-height: 330px;
@@ -140,8 +141,8 @@
   &--house::before {
     content: "";
     position: absolute;
-    top: 25%;
-    left: 7%;
+    top: 11%;
+    left: 4%;
     width: 39px;
     height: 37px;
     transform: translate(-50%, -50%);
@@ -160,8 +161,8 @@
   &--souvenir::before {
     content: "";
     position: absolute;
-    top: 25%;
-    left: 7%;
+    top: 11%;
+    left: 4%;
     width: 32px;
     height: 38px;
     transform: translate(-50%, -50%);
@@ -180,8 +181,8 @@
   &--food::before {
     content: "";
     position: absolute;
-    top: 25%;
-    left: 7%;
+    top: 11%;
+    left: 4%;
     width: 40px;
     height: 34px;
     transform: translate(-50%, -50%);
