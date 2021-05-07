@@ -6,11 +6,13 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
+  <body class="page__body">
     <header class="header">
       <div class="header__logo">
         <a class="header__logo-link" href="index.html">
           <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
+          <img class="header__logo-tablet" src="img/logotype-tablet.svg.svg" alt="Логотип city of Sedona">
+          <img class="header__logo-desktop" src="img/logotype-desktop.svg.svg" alt="Логотип city of Sedona">
         </a>
       </div>
       <div class="header__navigation">
@@ -19,10 +21,10 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="index.html">Главная</a></li>
-            <li class="navigation__item"><a>Фото и видео</a></li>
-            <li class="navigation__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            <li class="navigation__item"><a class="navigation__link">Главная</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="catalog.html">Фото и видео</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="form.html">Форма отзыва</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
@@ -34,75 +36,82 @@
           <img class="welcome__image-inner" src="img/sedona.svg" alt="Надпись Седона">
         </section>
       </div>
-      <div class="main__preface">
+      <div class="main__preface main__preface--gallery">
         <section class="preface preface--top">
           <h2 class="preface__title">Фото и видео</h2>
           <p class="preface__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </section>
       </div>
-      <section class="main__gallery">
-        <h2 class="visually-hidden">Галерея</h2>
-        <div class="main__gallery-container">
-          <figure class="biota">
+      <div class="main__gallery">
+        <section class="gallery">
+          <h2 class="visually-hidden">Галерея</h2>
+          <div class="gallery__wrapper gallery__wrapper--first">
+            <figure class="biota">
               <a class="biota__link" href="">
                 <div class="biota__image-wrapper">
-                  <img src="img/photo-1-mobile.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
+                  <img class="biota__image-mobile" src="img/photo-1-mobile.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
+                  <img class="biota__image-desktop" src="img/photo-1-desktop.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
                 </div>
               </a>
-            <figcaption class="biota__caption">Неродные просторы
-              <span class="biota__author">Автор фото:Борис</span>
-            </figcaption>
-          </figure>
-          <output class="biota__likes"></output>
-        </div>
-        <div class="main__gallery-container">
-          <figure class="biota">
-            <a class="biota__link" href="">
-              <div class="biota__image-wrapper">
-                <img src="img/photo-2-mobile.jpg" alt="Местная флора на фоне скал">
-              </div>
-            </a>
-            <figcaption class="biota__caption">Местная растительность
-              <span class="biota__author">Автор фото: Сергей</span>
-            </figcaption>
-          </figure>
-          <output class="biota__likes"></output>
-        </div>
-        <div class="main__gallery-container">
-          <figure class="biota">
-            <a class="biota__link" href="">
-              <div class="biota__image-wrapper">
-                <img src="img/photo-3-mobile.jpg" alt="Серпантин в лесу">
-              </div>
-            </a>
-            <figcaption class="biota__caption">Дорога на север
-              <span class="biota__author">Автор фото: Петр</span>
-            </figcaption>
-          </figure>
-          <output class="biota__likes"></output>
-        </div>
-        <div class="main__gallery-container">
-          <figure class="biota">
-            <a class="biota__link" href="">
-              <div class="biota__image-wrapper">
-                <img src="img/photo-4-mobile.jpg" alt="Мост дьявола на фоне скал">
-              </div>
-            </a>
-            <figcaption class="biota__caption">Мост дьявола
-              <span class="biota__author">Автор фото: Антон</span>
-            </figcaption>
-          </figure>
-          <output class="biota__likes" name="sum"></output>
-        </div>
-      </section>
+              <figcaption class="biota__caption">Неродные просторы
+                <span class="biota__author">Автор фото:Борис</span>
+              </figcaption>
+              <output class="biota__likes"></output>
+            </figure>
+          </div>
+          <div class="gallery__wrapper">
+            <figure class="biota">
+              <a class="biota__link" href="">
+                <div class="biota__image-wrapper">
+                  <img class="biota__image-mobile" src="img/photo-2-mobile.jpg" alt="Местная флора на фоне скал">
+                  <img class="biota__image-desktop" src="img/photo-2-desktop.jpg" alt="Местная флора на фоне скал">
+                </div>
+              </a>
+              <figcaption class="biota__caption">Местная растительность
+                <span class="biota__author">Автор фото: Сергей</span>
+              </figcaption>
+              <output class="biota__likes"></output>
+            </figure>
+          </div>
+          <div class="gallery__wrapper">
+            <figure class="biota">
+              <a class="biota__link" href="">
+                <div class="biota__image-wrapper gallery__wrapper--rest">
+                  <img class="biota__image-mobile" src="img/photo-3-mobile.jpg" alt="Серпантин в лесу">
+                  <img class="biota__image-desktop" src="img/photo-3-desktop.jpg" alt="Серпантин в лесу">
+                </div>
+              </a>
+              <figcaption class="biota__caption">Дорога на север
+                <span class="biota__author">Автор фото: Петр</span>
+              </figcaption>
+              <output class="biota__likes"></output>
+            </figure>
+          </div>
+          <div class="gallery__wrapper">
+            <figure class="biota">
+              <a class="biota__link" href="">
+                <div class="biota__image-wrapper gallery__wrapper--rest">
+                  <img class="biota__image-mobile" src="img/photo-4-mobile.jpg" alt="Мост дьявола на фоне скал">
+                  <img class="biota__image-desktop" src="img/photo-4-desktop.jpg" alt="Мост дьявола на фоне скал">
+                </div>
+              </a>
+              <figcaption class="biota__caption">Мост дьявола
+                <span class="biota__author">Автор фото: Антон</span>
+              </figcaption>
+              <output class="biota__likes" name="sum"></output>
+            </figure>
+          </div>
+        </section>
+      </div>
       <section class="main__presentation">
         <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
-        <section class="preface preface--video">
+        <section class="main__preface main__preface--video">
           <h2 class="preface__title">Все еще сомневаетесь?</h2>
           <p class="preface__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </section>
         <div class="main__presentation-video">
-          <img src="img/video-mobile.jpg" alt="Дорога между гор">
+          <img class="main__presentation-img-mobile" src="img/video-mobile.jpg" alt="Дорога между гор">
+          <img class="main__presentation-img-desktop" src="img/video-desktop.jpg" alt="Дорога между гор">
         </div>
       </section>
     </main>
