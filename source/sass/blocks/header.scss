@@ -15,6 +15,13 @@
   right: 0;
   z-index: 1;
 
+  &--menu-opened {
+    @media (max-width: $mobile-width-only) {
+      top: 160px;
+    }
+  }
+
+
   @media (min-width: $desktop-width) {
     width: 187px;
     height: 100px;

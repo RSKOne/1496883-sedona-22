@@ -8,26 +8,30 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__logo">
-        <a class="header__logo-link" href="index.html">
-          <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
-          <img class="header__logo-tablet" src="img/logotype-tablet.svg.svg" alt="Логотип city of Sedona">
-          <img class="header__logo-desktop" src="img/logotype-desktop.svg.svg" alt="Логотип city of Sedona">
-        </a>
-      </div>
-      <div class="header__navigation">
-        <nav class="navigation">
-          <button class="navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="catalog.html">Фото и видео</a></li>
-            <li class="navigation__item"><a class="navigation__link">Форма отзыва</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-          </ul>
-        </nav>
-      </div>
+      <a class="header__logo-link header__logo-link--menu-opened" href="index.html">
+        <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
+        <img class="header__logo-tablet" src="img/logotype-tablet.svg.svg" alt="Логотип city of Sedona">
+        <img class="header__logo-desktop" src="img/logotype-desktop.svg.svg" alt="Логотип city of Sedona">
+      </a>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--first" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--second" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--third">Форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--fourth" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
       <div class="main__welcome-inner">
@@ -46,26 +50,26 @@
         <fieldset class="review__name">
           <legend class="review__legend">Представьтесь:</legend>
           <label class="review__label">
-            <span class="review__label-name-text">Имя*:</span>
+            <span class="review__label-text review__label-text--name">Имя*:</span>
             <input class="review__input" type="text" name="first-name" placeholder="Петр" required>
           </label>
           <label class="review__label">
-            <span class="review__label-name-text">Фамилия*:</span>
+            <span class="review__label-text review__label-text--name">Фамилия*:</span>
             <input class="review__input" type="text" name="last-name" placeholder="Иванов" required>
           </label>
           <label class="review__label">
-            <span class="review__label-name-text">Отчество:</span>
+            <span class="review__label-text review__label-text--name">Отчество:</span>
             <input class="review__input" type="text" name="patronymic" placeholder="Александрович">
           </label>
         </fieldset>
         <fieldset class="review__contacts">
           <legend class="review__legend">Контактная информация:</legend>
           <label class="review__label review__label--contacts">
-            <span class="review__label-text">Контактный телефон*:</span>
+            <span class="review__label-text review__label-text--contacts">Контактный телефон*:</span>
             <input class="review__input review__input--contacts review__input--phone" type="tel" name="phone" placeholder="Введите телефон" required>
           </label>
           <label class="review__label review__label--contacts">
-            <span class="review__label-text">Электронная почта*:</span>
+            <span class="review__label-text review__label-text--contacts">Электронная почта*:</span>
             <input class="review__input review__input--contacts review__input--email" type="email" name="email" placeholder="Введите e-mail" required>
           </label>
         </fieldset>
@@ -74,19 +78,19 @@
           <div class="review__radio-item">
             <label class="review__label review__label--radio">
               <input class="review__radio-button" type="radio" name="choosed" value="good" checked>
-              <span>Скорее положительное</span>
+              <span class="review__label-text review__label-text--radio">Скорее положительное</span>
             </label>
           </div>
           <div class="review__radio-item">
             <label class="review__label review__label--radio">
               <input class="review__radio-button" type="radio" name="choosed" value="bad">
-              <span>Скорее отрицательное</span>
+              <span class="review__label-text review__label-text--radio">Скорее отрицательное</span>
             </label>
           </div>
           <div class="review__radio-item">
             <label class="review__label review__label--radio">
               <input class="review__radio-button" type="radio" name="choosed" value="hard to say">
-              <span>Затрудняюсь ответить</span>
+              <span class="review__label-text review__label-text--radio">Затрудняюсь ответить</span>
             </label>
           </div>
         </fieldset>

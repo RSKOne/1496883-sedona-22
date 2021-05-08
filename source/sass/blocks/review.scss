@@ -47,7 +47,17 @@
 }
 
 .review__label-text {
-  margin-left: 20px;
+  &--name {
+    line-height: 58px;
+  }
+
+  &--contacts {
+    margin-left: 20px;
+  }
+
+  &--radio {
+    line-height: 50px;
+  }
 }
 
 .review__input,
@@ -178,6 +188,9 @@
 
 //--------Radio buttons
 
+.review__radio-item + .review__radio-item {
+  margin-top: 30px;
+}
 
 .review__radio-button {
   appearance: none;
@@ -186,7 +199,6 @@
 .review__radio-button + span {
   position: relative;
   padding-left: 65px;
-  line-height: 55px;
 }
 
 .review__radio-button + span::before {
