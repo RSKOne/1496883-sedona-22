@@ -6,11 +6,15 @@
   background-color: $basicBlue;
   text-align: center;
 
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 56px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     min-height: 56px;
     background-color: $basicWhite;
   }
@@ -18,8 +22,11 @@
 
 .navigation__toggle {
   display: block;
+  position: absolute;
   width: 23px;
   height: 22px;
+  top: 178px;
+  right: 20px;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
@@ -36,9 +43,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     width: 768px;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,5 +56,47 @@
 
   @media (min-width: $tablet-width) {
     color: $basicBlack;
+  }
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      margin-left: 30px;
+      margin-right: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 76px;
+      margin-right: 132px;
+    }
+  }
+
+  &--second {
+    @media (min-width: $tablet-width) {
+      margin-right: 155px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 380px;
+    }
+  }
+
+  &--third {
+    @media (min-width: $tablet-width) {
+      margin-right: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 107px;
+    }
+  }
+
+  &--fourth {
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
   }
 }

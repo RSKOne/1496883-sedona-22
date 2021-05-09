@@ -1,7 +1,7 @@
 .biota {
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
@@ -21,8 +21,21 @@
 }
 
 .biota__image-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
+}
+
+.biota__image-mobile {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.biota__image-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
