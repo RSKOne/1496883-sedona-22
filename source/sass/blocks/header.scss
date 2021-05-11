@@ -15,22 +15,19 @@
   right: 0;
   z-index: 1;
 
-  &--menu-opened {
-    @media (max-width: $mobile-width-only) {
-      top: 160px;
-    }
-  }
-
-
   @media (min-width: $desktop-width) {
     width: 187px;
     height: 100px;
   }
+
+  &--menu-opened {
+    @media (max-width: $mobile-width-only) {
+      top: 168px;
+    }
+  }
 }
 
 .header__logo-mobile {
-  display: block;
-
   @media (min-width: $tablet-width) {
     display: none;
   }

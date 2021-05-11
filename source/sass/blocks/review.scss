@@ -221,13 +221,13 @@
   background-color: $lightGrey;
 }
 
+.review__radio-button:hover + span::before {
+  background-color: $midGrey;
+}
+
 .review__radio-button:focus + span::before,
 .review__radio-button:active + span::before {
   background-color: $radioGrey;
-}
-
-.review__radio-button:hover + span::before {
-  background-color: $midGrey;
 }
 
 .review__radio-button:checked + span::after {
