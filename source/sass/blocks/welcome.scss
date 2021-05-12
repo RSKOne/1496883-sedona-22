@@ -7,6 +7,18 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 37px;
+    background-image: url("../../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: -439px -19px;
+  }
+
   @media (min-width: $tablet-width) {
     height: 518px;
     background-image: url("../img/back-desktop.jpg.jpg");
@@ -21,7 +33,7 @@
 .welcome__image {
   position: absolute;
   margin: auto;
-  top: 0;
+  top: 2px;
   left: 0;
   bottom: 0;
   right: 0;
