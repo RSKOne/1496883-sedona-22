@@ -42,7 +42,7 @@
   &--twitter::before {
     width: 18px;
     height: 15px;
-    background-image: url("../../img/icon-twitter.svg.svg");
+    background-image: url("../img/icon-twitter.svg.svg");
 
     &:focus,
     &:active {
@@ -53,13 +53,13 @@
   &--facebook::before {
     width: 9px;
     height: 19px;
-    background-image: url("../../img/icon-facebook.svg.svg");
+    background-image: url("../img/icon-facebook.svg.svg");
   }
 
   &--youtube::before {
     width: 20px;
     height: 14px;
-    background-image: url("../../img/icon-youtube.svg.svg");
+    background-image: url("../img/icon-youtube.svg.svg");
   }
 
   &:hover {
