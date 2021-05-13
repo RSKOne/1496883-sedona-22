@@ -10,7 +10,16 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
-  margin: 0 0 40px 0;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 28px;
+    letter-spacing: 1.7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 39px;
+  }
 }
 
 .preface__text {

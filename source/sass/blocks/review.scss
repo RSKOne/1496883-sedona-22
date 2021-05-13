@@ -221,13 +221,13 @@
   background-color: $lightGrey;
 }
 
+.review__radio-button:hover + span::before {
+  background-color: $midGrey;
+}
+
 .review__radio-button:focus + span::before,
 .review__radio-button:active + span::before {
   background-color: $radioGrey;
-}
-
-.review__radio-button:hover + span::before {
-  background-color: $midGrey;
 }
 
 .review__radio-button:checked + span::after {
@@ -280,8 +280,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
-    padding-left: 80px;
+    width: 185px;
+    padding-left: 65px;
 
     &:nth-child(n+2) {
       padding-top: 25px;
@@ -294,6 +294,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 72px;
   }
 }
 
@@ -338,7 +342,7 @@
   top: 27px;
   left: -46px;
   transform: translate(-50%, -50%);
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;

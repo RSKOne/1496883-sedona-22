@@ -1,8 +1,8 @@
 .navigation {
-  display: block;
-  font-size: inherit;
+  position: relative;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 26px;
   background-color: $basicBlue;
   text-align: center;
 
@@ -12,8 +12,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     min-height: 56px;
     background-color: $basicWhite;
@@ -21,18 +19,84 @@
 }
 
 .navigation__toggle {
-  display: block;
   position: absolute;
-  width: 23px;
-  height: 22px;
-  top: 178px;
-  right: 20px;
+  width: 46px;
+  height: 44px;
+  top: 5px;
+  right: 10px;
   background-color: transparent;
+  border: none;
+  padding: 8px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
+
+.navigation--opened .navigation__toggle {
+  top: 8px;
+  left: auto;
+  right: 8px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 11px;
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.6;
+  }
+
+  &:focus::before,
+  &:focus::after,
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+
+.navigation--closed > .navigation__list {
+  display: none;
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 23px;
+  height: 4px;
+  background-color: $basicBlue;
+  box-shadow: 0 8px 0 0 $basicBlue, 0 16px 0 0 $basicBlue;
+}
+
+.navigation--closed .navigation__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.navigation--closed .navigation__toggle:focus::before,
+.navigation--closed .navigation__toggle:active::before {
+  opacity: 0.3;
+}
+
 
 .navigation__list {
   list-style: none;
@@ -52,45 +116,71 @@
 }
 
 .navigation__link {
+  height: 56px;
+  padding-top: 16px;
   color: $basicWhite;
+  position: relative;
+  letter-spacing: 2.2px;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    background-color: $basicBlue;
+    border-top: 1px solid  rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
 
   @media (min-width: $tablet-width) {
     color: $basicBlack;
+    letter-spacing: -0.1px;
   }
 
   &--first {
     @media (min-width: $tablet-width) {
-      margin-left: 30px;
-      margin-right: 77px;
+      margin-left: 49px;
+      margin-right: 78px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 76px;
-      margin-right: 132px;
+      margin-left: 90px;
+      margin-right: 162px;
     }
   }
 
   &--second {
     @media (min-width: $tablet-width) {
-      margin-right: 155px;
+      margin-right: 212px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 380px;
+      margin-right: 384px;
     }
   }
 
   &--third {
     @media (min-width: $tablet-width) {
-      margin-right: 35px;
+      margin-right: 52px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 107px;
+      margin-right: 138px;
     }
   }
 
   &--fourth {
+    position: relative;
+
+    &::before {
+      @media (max-width: $mobile-width-only) {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 7px;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+      }
+    }
+
     @media (min-width: $tablet-width) {
       margin-right: 0;
     }
