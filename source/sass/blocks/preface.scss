@@ -16,10 +16,10 @@
     margin-top: 28px;
     letter-spacing: 1.7px;
   }
-  // @media (min-width: $desktop-width) {
-  //   margin: 39px 0 31px 0;
-  //   letter-spacing: 1.8px;
-  // }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 39px;
+  }
 }
 
 .preface__text {
