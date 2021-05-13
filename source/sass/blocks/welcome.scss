@@ -7,6 +7,16 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    background-image: url("../img/back-desktop.jpg.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -17,16 +27,6 @@
     background-image: url("../../img/intro-triangle.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-  }
-
-  @media (min-width: $tablet-width) {
-    height: 518px;
-    background-image: url("../img/back-desktop.jpg.jpg");
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1200px;
-    margin: 0 auto;
   }
 }
 
