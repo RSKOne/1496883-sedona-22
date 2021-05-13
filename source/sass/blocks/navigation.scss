@@ -131,12 +131,13 @@
 
   @media (min-width: $tablet-width) {
     color: $basicBlack;
+    letter-spacing: -0.1px;
   }
 
   &--first {
     @media (min-width: $tablet-width) {
-      margin-left: 30px;
-      margin-right: 77px;
+      margin-left: 49px;
+      margin-right: 78px;
     }
 
     @media (min-width: $desktop-width) {
@@ -147,7 +148,7 @@
 
   &--second {
     @media (min-width: $tablet-width) {
-      margin-right: 155px;
+      margin-right: 212px;
     }
 
     @media (min-width: $desktop-width) {
@@ -157,7 +158,7 @@
 
   &--third {
     @media (min-width: $tablet-width) {
-      margin-right: 35px;
+      margin-right: 52px;
     }
 
     @media (min-width: $desktop-width) {

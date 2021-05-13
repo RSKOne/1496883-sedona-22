@@ -46,20 +46,38 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 48px 52px 35px;
+    padding: 41px 20px 20px;
+    flex-shrink: 35;
+  }
 
-    & > :nth-child(3) {
-      margin-top: 24px;
+  & > :nth-child(3) {
+    @media (min-width: $tablet-width) {
+      margin-top: 22px;
     }
   }
+  // }
+  // @media (min-width: $desktop-width) {
+  //   padding: 48px 52px 35px;
+
+  //   & > :nth-child(3) {
+  //     margin-top: 24px;
+  //   }
+  // }
 }
 
 .advantages__content--second {
   padding: 40px 20px 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 51px 50px 35px;
+    padding: 44px 35px 20px;
+    flex-shrink: 41;
     order: 2;
+  }
+
+  & > :nth-child(3) {
+    @media (min-width: $tablet-width) {
+      margin-top: 22px;
+    }
   }
 }
 
@@ -72,6 +90,11 @@
 
 .advantages__picture-first-mobile {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    width: 520px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -88,6 +111,11 @@
 
 .advantages__picture-second-mobile {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    width: 520px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -111,13 +139,25 @@
   &--light {
     color: $basicWhite;
 
-    & br {
-      display: none;
+    @media (max-width: $mobile-width-only) {
+      & br {
+        display: none;
+      }
     }
   }
 
   @media (min-width: $tablet-width) {
     letter-spacing: 1.9px;
+  }
+
+  &--points {
+    & br {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+    }
   }
 }
 
@@ -137,6 +177,30 @@
 
     & br {
       display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+    }
+
+    &:nth-of-type(2) {
+      @media (min-width: $tablet-width) {
+        margin-top: 22px;
+      }
+    }
+  }
+
+  &--points {
+    &:nth-of-type(2) {
+      @media (min-width: $tablet-width) {
+        margin-top: 13px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      @media (min-width: $tablet-width) {
+        margin-top: 23px;
+      }
     }
   }
 }
@@ -168,13 +232,27 @@
   }
 }
 
+.advantages__list > .advantages__item {
+  &--points {
+    &:nth-child(2) {
+      @media (min-width: $tablet-width) {
+        padding: 42px 56px 20px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: (100% / 3);
+  }
+}
+
 .advantages__item {
   position: relative;
   padding: 0 0 0 50px;
 
   @media (min-width: $tablet-width) {
+    padding: 159px 35px 20px 31px;
     min-height: 330px;
-    padding: 160px 47px 20px;
   }
 
   &--house::before {
@@ -194,7 +272,6 @@
       height: 75px;
       top: 25%;
       left: 53%;
-      order: 1;
     }
   }
 
@@ -252,10 +329,10 @@
 
   &--points {
     position: relative;
-    padding: 0px 15px 13px;
+    padding: 0 15px 13px;
 
     @media (min-width: $tablet-width) {
-      padding: 45px 40px;
+      padding: 42px 40px 20px;
       min-height: 255px;
     }
   }
