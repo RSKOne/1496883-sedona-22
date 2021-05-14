@@ -43,12 +43,12 @@
       <div class="main__preface main__preface--form">
         <section class="preface">
           <h2 class="preface__title">Оставьте свой отзыв</h2>
-          <p class="preface__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="preface__text preface__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
       </div>
       <form class="review" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="review__name">
-          <legend class="review__legend">Представьтесь:</legend>
+          <legend class="review__legend review__legend--name">Представьтесь:</legend>
           <label class="review__label">
             <span class="review__label-text review__label-text--name">Имя*:</span>
             <input class="review__input" type="text" name="first-name" placeholder="Петр" required>
@@ -63,15 +63,15 @@
           </label>
         </fieldset>
         <fieldset class="review__contacts">
-          <legend class="review__legend">Контактная информация:</legend>
-          <label class="review__label review__label--contacts">
+          <legend class="review__legend review__legend--contacts">Контактная информация:</legend>
+          <label class="review__label review__label--contacts review__label--contacts-phone">
             <span class="review__label-text review__label-text--contacts review__label-text--contacts-mobile">Контактный телефон*:</span>
             <span class="review__label-text review__label-text--contacts review__label-text--contacts-desktop">Телефон*:</span>
-            <input class="review__input review__input--contacts review__input--phone" type="tel" name="phone" placeholder="Введите телефон" required>
+            <input class="review__input review__input--contacts review__input--contacts-phone" type="tel" name="phone" placeholder="Введите телефон" required>
           </label>
-          <label class="review__label review__label--contacts">
+          <label class="review__label review__label--contacts review__label--contacts-email">
             <span class="review__label-text review__label-text--contacts">Электронная почта*:</span>
-            <input class="review__input review__input--contacts review__input--email" type="email" name="email" placeholder="Введите e-mail" required>
+            <input class="review__input review__input--contacts" type="email" name="email" placeholder="Введите e-mail" required>
           </label>
         </fieldset>
         <fieldset class="review__impressions">

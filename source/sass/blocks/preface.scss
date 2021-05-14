@@ -28,6 +28,10 @@
   line-height: 26px;
   color: $darkText;
   margin: 0;
+
+  &--form {
+    line-height: 24px;
+  }
 }
 
 .preface__button {
