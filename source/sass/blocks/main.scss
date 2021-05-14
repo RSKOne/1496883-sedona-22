@@ -19,6 +19,11 @@
   &--form {
     padding: 21px 22px;
     margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      padding: 21px 165px 61px;
+      margin: 0;
+    }
   }
 
   &--gallery,
