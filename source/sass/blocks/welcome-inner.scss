@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 300px;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -34,11 +35,15 @@
   position: absolute;
   margin: auto;
   top: -19px;
-  left: 0;
+  left: -5px;
   bottom: 0;
   right: 0;
 
   @media (min-width: $tablet-width) {
     width: 458px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 455px;
   }
 }

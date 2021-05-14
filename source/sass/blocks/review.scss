@@ -11,7 +11,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 320px auto auto;
-    grid-template-rows: auto auto auto 300px auto;
+    grid-template-rows: auto auto auto auto auto;
     max-width: 1032px;
     padding: 0 60px;
     margin-bottom: 56px;
@@ -21,6 +21,7 @@
     grid-template-columns: 320px auto;
     max-width: 1200px;
     padding: 0 120px;
+    margin-bottom: 67px;
   }
 }
 
@@ -41,6 +42,10 @@
       margin-bottom: 55px;
       text-align: left;
     }
+
+    // @media (min-width: $desktop-width) {
+
+    // }
   }
 
   &--contacts {
@@ -48,6 +53,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
     }
   }
 
@@ -59,6 +68,11 @@
       padding: 0;
       text-align: left;
     }
+
+    @media (min-width: $desktop-width) {
+      text-align: right;
+      margin-left: 31px;
+    }
   }
 
   &--checkbox {
@@ -67,6 +81,11 @@
     @media (min-width: $tablet-width) {
       padding: 0 122px;
       margin: 0 0 44px 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0 285px;
+      margin: 0 0 21px 0;
     }
   }
 
@@ -104,6 +123,10 @@
       top: 34px;
       right: 0;
       z-index: 2;
+
+      @media (min-width: $desktop-width) {
+        top: 9px;
+      }
     }
 
     &::after {
@@ -118,6 +141,11 @@
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 3;
+
+      @media (min-width: $desktop-width) {
+        top: 38px;
+        right: 10px;
+      }
     }
   }
 
@@ -132,6 +160,11 @@
       top: 34px;
       right: 0;
       z-index: 2;
+
+      @media (min-width: $desktop-width) {
+        top: 9px;
+        right: -4px;
+      }
     }
 
     &::after {
@@ -146,6 +179,11 @@
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 3;
+
+      @media (min-width: $desktop-width) {
+        top: 38px;
+        right: 9px;
+      }
     }
   }
 }
@@ -168,6 +206,7 @@
     margin-left: 20px;
 
     @media (min-width: $desktop-width) {
+      line-height: 78px;
       margin-left: 0;
     }
   }
@@ -244,6 +283,10 @@
   @media (min-width: $tablet-width) {
     padding: 16px 0 0 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 0 0 19px;
+  }
 }
 
 .review__name,
@@ -265,6 +308,10 @@
     padding-left: 63px;
     margin: 0;
     margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 240px;
   }
 
   &::before {
@@ -295,7 +342,6 @@
 
   @media (min-width: $tablet-width) {
     grid-area: 2 / 1 / 3 / 4;
-    height: 286px;
     margin: 87px 0 0 0;
   }
 
@@ -317,12 +363,22 @@
       min-width: 123px;
       width: 123px;
     }
+
+    @media (min-width: $desktop-width) {
+      min-width: 280px;
+      width: 280px;
+    }
   }
 
   &::before {
     @media (min-width: $tablet-width) {
       right: 505px;
       top: -38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 662px;
+      top: -79px;
     }
   }
 
@@ -334,8 +390,14 @@
       right: -545px;
       top: -38px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: -698px;
+      top: -79px;
+    }
   }
 }
+
 
 .review__comments {
   margin-bottom: 52px;
@@ -345,6 +407,10 @@
   @media (min-width: $tablet-width) {
     grid-area: 4 / 1 / 5 / 4;
     height: 241px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
   }
 
   &::before,
@@ -365,12 +431,22 @@
       min-width: 123px;
       width: 123px;
     }
+
+    @media (min-width: $desktop-width) {
+      min-width: 280px;
+      width: 280px;
+    }
   }
 
   &::before {
     @media (min-width: $tablet-width) {
       right: 505px;
       top: -74px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 663px;
+      top: -71px;
     }
   }
 
@@ -381,6 +457,11 @@
       display: block;
       right: -545px;
       top: -74px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -700px;
+      top: -71px;
     }
   }
 }
@@ -471,6 +552,11 @@
   left: -7px;
   border-radius: 100%;
   background-color: $lightGrey;
+
+  @media (min-width: $desktop-width) {
+    top: -8px;
+    left: -4px;
+  }
 }
 
 .review__radio-button:hover + span::before {
@@ -497,6 +583,11 @@
     top: 18px;
     left: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
+    left: 23px;
+  }
 }
 
 .review__radio-button:focus + span::after,
@@ -516,12 +607,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 0 63px 0;
+    margin: 29px 0 63px 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: 3 / 1 / 4 / 4;
     max-width: 1200px;
+    margin: 29px 0 66px 0;
   }
 
   &::before,
@@ -533,7 +625,7 @@
     max-width: 520px;
     height: 1px;
     left: -20px;
-    top: -65px;
+    top: -90px;
     right: -20px;
     background-color: $midGrey;
     margin: 0 auto;
@@ -542,12 +634,22 @@
       min-width: 123px;
       width: 123px;
     }
+
+    @media (min-width: $desktop-width) {
+      min-width: 280px;
+      width: 280px;
+    }
   }
 
   &::before {
     @media (min-width: $tablet-width) {
       right: 504px;
       top: -71px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 662px;
+      top: -47px;
     }
   }
 
@@ -559,6 +661,11 @@
       right: -545px;
       top: -71px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: -699px;
+      top: -47px;
+    }
   }
 }
 
@@ -569,7 +676,7 @@
   @media (min-width: $tablet-width) {
     width: 260px;
     padding-left: 104px;
-    line-height: 62px;
+    line-height: 55px;
 
     &:nth-child(n+4) {
       padding-top: 25px;
@@ -577,8 +684,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 185px;
-    padding-left: 65px;
+    width: auto;
+    padding-left: 70px;
 
     &:nth-child(n+2) {
       padding-top: 25px;
@@ -594,7 +701,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 72px;
+    margin-left: 71px;
   }
 }
 
