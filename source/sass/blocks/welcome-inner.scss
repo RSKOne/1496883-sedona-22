@@ -1,7 +1,7 @@
 .welcome-inner {
   position: relative;
   width: auto;
-  height: 160px;
+  height: 156px;
   background-color: $mountainBrown;
   background-image: url("../img/back-mobile.jpg.jpg");
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     content: "";
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     height: 56px;
     background-image: url("../../img/intro-triangle.svg");
@@ -33,7 +33,7 @@
 .welcome__image-inner {
   position: absolute;
   margin: auto;
-  top: 0;
+  top: -19px;
   left: 0;
   bottom: 0;
   right: 0;
