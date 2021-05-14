@@ -242,7 +242,7 @@
   letter-spacing: -2px;
 
   @media (min-width: $tablet-width) {
-    padding: 19px 0 0 20px;
+    padding: 16px 0 0 19px;
   }
 }
 
@@ -279,6 +279,14 @@
     right: -20px;
     background-color: $midGrey;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      min-width: 1px;
+      height: 292px;
+      width: 1px;
+      top: -78px;
+      left: -341px;
+    }
   }
 }
 
@@ -291,7 +299,8 @@
     margin: 87px 0 0 0;
   }
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     display: block;
@@ -303,6 +312,28 @@
     right: -20px;
     background-color: $midGrey;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      min-width: 123px;
+      width: 123px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      right: 505px;
+      top: -38px;
+    }
+  }
+
+  &::after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      right: -545px;
+      top: -38px;
+    }
   }
 }
 
@@ -316,7 +347,8 @@
     height: 241px;
   }
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     display: block;
@@ -324,10 +356,32 @@
     max-width: 520px;
     height: 1px;
     left: -20px;
-    top: -63px;
+    top: -65px;
     right: -20px;
     background-color: $midGrey;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      min-width: 123px;
+      width: 123px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      right: 505px;
+      top: -74px;
+    }
+  }
+
+  &::after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      right: -545px;
+      top: -74px;
+    }
   }
 }
 
@@ -383,6 +437,10 @@
     right: -20px;
     background-color: $midGrey;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -466,7 +524,8 @@
     max-width: 1200px;
   }
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     display: block;
@@ -474,10 +533,32 @@
     max-width: 520px;
     height: 1px;
     left: -20px;
-    top: -90px;
+    top: -65px;
     right: -20px;
     background-color: $midGrey;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      min-width: 123px;
+      width: 123px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      right: 504px;
+      top: -71px;
+    }
+  }
+
+  &::after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      right: -545px;
+      top: -71px;
+    }
   }
 }
 
