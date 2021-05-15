@@ -13,7 +13,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
-    margin: 0 auto;
   }
 
   &--form {
@@ -22,7 +21,7 @@
 
     @media (min-width: $tablet-width) {
       padding: 21px 165px 61px;
-      margin: 0;
+      margin: 0 auto;
     }
 
     @media (min-width: $desktop-width) {

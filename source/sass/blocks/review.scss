@@ -42,10 +42,6 @@
       margin-bottom: 55px;
       text-align: left;
     }
-
-    // @media (min-width: $desktop-width) {
-
-    // }
   }
 
   &--contacts {
@@ -79,12 +75,12 @@
     margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 122px;
+      width: 400px;
+      padding: 0 50px;
       margin: 0 0 44px 0;
     }
 
-    @media (min-width: $tablet-width) {
-      padding: 0 285px;
+    @media (min-width: $desktop-width) {
       margin: 0 0 21px 0;
     }
   }
@@ -137,7 +133,7 @@
       top: 62px;
       right: 8px;
       transform: translate(-50%, -50%);
-      background-image: url("../../img/icon-phone.svg");
+      background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 3;
@@ -175,7 +171,7 @@
       top: 62px;
       right: 11px;
       transform: translate(-50%, -50%);
-      background-image: url("../../img/icon-mail.svg");
+      background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 3;
@@ -331,8 +327,14 @@
       min-width: 1px;
       height: 292px;
       width: 1px;
-      top: -78px;
-      left: -341px;
+      top: 68px;
+      left: -103%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 68px;
+      left: -53%;
     }
   }
 }
@@ -607,7 +609,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 29px 0 63px 0;
+    margin: 29px 0 69px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -674,12 +676,12 @@
   line-height: 56px;
 
   @media (min-width: $tablet-width) {
-    width: 260px;
+    width: 34vw;
     padding-left: 104px;
     line-height: 55px;
 
     &:nth-child(n+4) {
-      padding-top: 25px;
+      padding-top: 35px;
     }
   }
 
@@ -746,7 +748,7 @@
   top: 26px;
   left: -52px;
   transform: translate(-50%, -50%);
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
