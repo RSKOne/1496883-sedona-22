@@ -40,15 +40,15 @@
           <img class="welcome__image-inner" src="img/sedona.svg" alt="Надпись Седона">
         </section>
       </div>
-      <div class="main__preface">
+      <div class="main__preface main__preface--form">
         <section class="preface">
           <h2 class="preface__title">Оставьте свой отзыв</h2>
-          <p class="preface__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="preface__text preface__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
       </div>
       <form class="review" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="review__name">
-          <legend class="review__legend">Представьтесь:</legend>
+          <legend class="review__legend review__legend--name">Представьтесь:</legend>
           <label class="review__label">
             <span class="review__label-text review__label-text--name">Имя*:</span>
             <input class="review__input" type="text" name="first-name" placeholder="Петр" required>
@@ -63,15 +63,15 @@
           </label>
         </fieldset>
         <fieldset class="review__contacts">
-          <legend class="review__legend">Контактная информация:</legend>
-          <label class="review__label review__label--contacts">
+          <legend class="review__legend review__legend--contacts">Контактная информация:</legend>
+          <label class="review__label review__label--contacts review__label--contacts-phone">
             <span class="review__label-text review__label-text--contacts review__label-text--contacts-mobile">Контактный телефон*:</span>
             <span class="review__label-text review__label-text--contacts review__label-text--contacts-desktop">Телефон*:</span>
-            <input class="review__input review__input--contacts review__input--phone" type="tel" name="phone" placeholder="Введите телефон" required>
+            <input class="review__input review__input--contacts review__input--contacts-phone" type="tel" name="phone" placeholder="Введите телефон" required>
           </label>
-          <label class="review__label review__label--contacts">
+          <label class="review__label review__label--contacts review__label--contacts-email">
             <span class="review__label-text review__label-text--contacts">Электронная почта*:</span>
-            <input class="review__input review__input--contacts review__input--email" type="email" name="email" placeholder="Введите e-mail" required>
+            <input class="review__input review__input--contacts" type="email" name="email" placeholder="Введите e-mail" required>
           </label>
         </fieldset>
         <fieldset class="review__impressions">
@@ -110,34 +110,34 @@
           </div>
         </div>
         <fieldset class="review__places">
-          <legend class="review__legend">Посещенные достопримечательности:</legend>
+          <legend class="review__legend review__legend--checkbox">Посещенные достопримечательности:</legend>
           <div class="review__spot-item">
             <label class="review__label review__label--checkbox">
               <input class="review__spot-checkbox" type="checkbox" name="Devil's bridge" checked>
-              <span>Мост Дьявола</span>
+              <span class="review__label-text review__label-text--checkbox">Мост Дьявола</span>
             </label>
           </div>
           <div class="review__spot-item">
             <label class="review__label review__label--checkbox">
               <input class="review__spot-checkbox" type="checkbox" name="Hill of the bell" checked>
-              <span>Гора-Колокол</span>
+              <span class="review__label-text review__label-text--checkbox">Гора-Колокол</span>
             </label>
           </div>
           <div class="review__spot-item">
             <label class="review__label review__label--checkbox">
               <input class="review__spot-checkbox" type="checkbox" name="Slide park" checked>
-              <span>Слайд-парк</span>
+              <span class="review__label-text review__label-text--checkbox">Слайд-парк</span>
             </label>
           </div>
           <div class="review__spot-item">
             <label class="review__label review__label--checkbox">
               <input class="review__spot-checkbox" type="checkbox" name="Red rocks">
-              <span>Красные скалы</span>
+              <span class="review__label-text review__label-text--checkbox">Красные скалы</span>
             </label>
           </div>
         </fieldset>
         <fieldset class="review__comments">
-          <legend class="review__legend">Опишите свои эмоции:</legend>
+          <legend class="review__legend review__legend--comments">Опишите свои эмоции:</legend>
           <textarea class="review__textarea" name="comments" cols="10 " rows="7" placeholder="Опишите подробно все свои восторги "></textarea>
         </fieldset>
         <button class="review__button button" type="submit">Отправить отзыв</button>
@@ -151,13 +151,13 @@
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social-networks__list">
             <li class="social-networks__item">
-              <a class="social-networks__link" href="#" aria-label="Twitter"></a>
+              <a class="social-networks__link social-networks__link--twitter" href="https://www.twitter.com" aria-label="Twitter"></a>
             </li>
             <li class="social-networks__item">
-              <a class="social-networks__link" href="#" aria-label="Facebook"></a>
+              <a class="social-networks__link social-networks__link--facebook" href="https://www.facebook.com" aria-label="Facebook"></a>
             </li>
             <li class="social-networks__item">
-              <a class="social-networks__link" href="#" aria-label="YouTube"></a>
+              <a class="social-networks__link social-networks__link--youtube" href="https://www.youtube.com" aria-label="YouTube"></a>
             </li>
           </ul>
         </section>
