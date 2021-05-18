@@ -20,14 +20,21 @@
     margin-bottom: 16px;
 
     @media (min-width: $tablet-width) {
-      padding: 21px 165px 61px;
+      width: 440px;
       margin: 0 auto;
+      padding: 21px 0 61px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 75px 380px 20px;
-      margin: 0 0 12px 0;
+      padding: 75px 0 20px;
+      margin-bottom: 12px;
     }
+  }
+
+  &--gallery {
+    padding: 16px 15px;
+    line-height: 25px;
+    margin-bottom: 8px;
   }
 
   &--gallery,
@@ -41,6 +48,11 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+  }
+
+  &--video {
+    min-height: 190px;
+    margin-bottom: 0;
   }
 }
 
@@ -95,7 +107,6 @@
   min-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -110,7 +121,7 @@
 
 .main__presentation {
   min-width: 320px;
-  padding-bottom: 40px;
+  padding-bottom: 105px;
 }
 
 .main__presentation-video {

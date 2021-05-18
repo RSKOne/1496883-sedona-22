@@ -13,12 +13,28 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-    margin: 42px 0 33px;
+    font-size: 21px;
+    margin: 27px 0 33px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 39px;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      margin: 42px 0 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 39px 0 33px;
+    }
+  }
+
+  &--gallery,
+  &--video {
+    margin-bottom: 28px;
   }
 }
 
@@ -29,7 +45,9 @@
   color: $darkText;
   margin: 0;
 
-  &--form {
+  &--form,
+  &--gallery,
+  &--video {
     line-height: 24px;
   }
 }

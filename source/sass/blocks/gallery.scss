@@ -16,6 +16,12 @@
 }
 
 .gallery__wrapper {
+  margin-bottom: 39px;
+
+  &:last-child {
+    margin-bottom: 19px;
+  }
+
   &--first {
     @media (min-width: $tablet-width) {
       grid-area: 1 / 1 / 2 / 3;

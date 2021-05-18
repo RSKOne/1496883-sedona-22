@@ -43,7 +43,7 @@
       <div class="main__preface main__preface--gallery">
         <section class="preface preface--top">
           <h2 class="preface__title">Фото и видео</h2>
-          <p class="preface__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="preface__text preface__text--gallery">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </section>
       </div>
       <div class="main__gallery">
@@ -57,10 +57,13 @@
                   <img class="biota__image-desktop" src="img/photo-1-desktop.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
                 </div>
               </a>
-              <figcaption class="biota__caption">Неродные просторы
-                <span class="biota__author">Автор фото:Борис</span>
-              </figcaption>
-              <output class="biota__likes"></output>
+              <div class="biota__figcaption-wrapper">
+                <figcaption class="biota__figcaption">
+                  <span class="biota__description">Неродные просторы</span>
+                  <span class="biota__author">Автор фото:Борис</span>
+                </figcaption>
+                <output class="biota__likes">1350</output>
+              </div>
             </figure>
           </div>
           <div class="gallery__wrapper">
@@ -71,10 +74,13 @@
                   <img class="biota__image-desktop" src="img/photo-2-desktop.jpg" alt="Местная флора на фоне скал">
                 </div>
               </a>
-              <figcaption class="biota__caption">Местная растительность
-                <span class="biota__author">Автор фото: Сергей</span>
-              </figcaption>
-              <output class="biota__likes"></output>
+              <div class="biota__figcaption-wrapper">
+                <figcaption class="biota__figcaption">
+                  <span class="biota__description">Местная растительность</span>
+                  <span class="biota__author">Автор фото: Сергей</span>
+                </figcaption>
+                <output class="biota__likes">143</output>
+              </div>
             </figure>
           </div>
           <div class="gallery__wrapper">
@@ -85,10 +91,13 @@
                   <img class="biota__image-desktop" src="img/photo-3-desktop.jpg" alt="Серпантин в лесу">
                 </div>
               </a>
-              <figcaption class="biota__caption">Дорога на север
-                <span class="biota__author">Автор фото: Петр</span>
-              </figcaption>
-              <output class="biota__likes"></output>
+              <div class="biota__figcaption-wrapper">
+                <figcaption class="biota__figcaption">
+                  <span class="biota__description">Дорога на север</span>
+                  <span class="biota__author">Автор фото: Петр</span>
+                </figcaption>
+                <output class="biota__likes">96</output>
+              </div>
             </figure>
           </div>
           <div class="gallery__wrapper">
@@ -99,20 +108,23 @@
                   <img class="biota__image-desktop" src="img/photo-4-desktop.jpg" alt="Мост дьявола на фоне скал">
                 </div>
               </a>
-              <figcaption class="biota__caption">Мост дьявола
-                <span class="biota__author">Автор фото: Антон</span>
-              </figcaption>
-              <output class="biota__likes" name="sum"></output>
+              <div class="biota__figcaption-wrapper">
+                <figcaption class="biota__figcaption">
+                  <span class="biota__description">Мост дьявола</span>
+                  <span class="biota__author">Автор фото: Антон</span>
+                </figcaption>
+                <output class="biota__likes" name="sum">254</output>
+              </div>
             </figure>
           </div>
         </section>
       </div>
+      <section class="main__preface main__preface--video">
+        <h2 class="preface__title preface__title--video">Все еще сомневаетесь?</h2>
+        <p class="preface__text preface__text--video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </section>
       <section class="main__presentation">
         <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
-        <section class="main__preface main__preface--video">
-          <h2 class="preface__title">Все еще сомневаетесь?</h2>
-          <p class="preface__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </section>
         <div class="main__presentation-video">
           <img class="main__presentation-img-mobile" src="img/video-mobile.jpg" alt="Дорога между гор">
           <img class="main__presentation-img-desktop" src="img/video-desktop.jpg" alt="Дорога между гор">
@@ -126,13 +138,13 @@
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social-networks__list">
             <li class="social-networks__item">
-              <a class="social-networks__link" href="#" aria-label="Twitter"></a>
+              <a class="social-networks__link social-networks__link--twitter" href="https://www.twitter.com" aria-label="Twitter"></a>
             </li>
             <li class="social-networks__item">
-              <a class="social-networks__link" href="#" aria-label="Facebook"></a>
+              <a class="social-networks__link social-networks__link--facebook" href="https://www.facebook.com" aria-label="Facebook"></a>
             </li>
             <li class="social-networks__item">
-              <a class="social-networks__link" href="#" aria-label="YouTube"></a>
+              <a class="social-networks__link social-networks__link--youtube" href="https://www.youtube.com" aria-label="YouTube"></a>
             </li>
           </ul>
         </section>
