@@ -32,9 +32,15 @@
     }
   }
 
+
   &--gallery,
   &--video {
     margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      margin-bottom: 33px;
+    }
   }
 }
 
