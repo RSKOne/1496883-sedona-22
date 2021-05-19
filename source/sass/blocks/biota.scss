@@ -1,23 +1,41 @@
 .biota {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
-.biota__caption {
+.biota__figcaption-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    height: 80px;
+    background-color: $lightGrey;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-top: -80px;
+    background: rgba(0, 0, 0, 0.3);
+    color: $basicWhite;
+  }
+}
+
+.biota__figcaption {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 15px 20px;
+  }
 }
 
 .biota__author {
   display: block;
   font-weight: normal;
   text-transform: none;
+  margin-bottom: 11px;
 }
 
 .biota__image-wrapper {
@@ -37,5 +55,49 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    height: 267px;
+  }
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      height: 400px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+    }
+  }
+}
+
+.biota__likes {
+  position: relative;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 0 0 0 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    width: 40px;
+    padding: 30px 53px 0 50px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    width: 23px;
+    height: 21px;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      top: 39px;
+      left: 30px;
+    }
   }
 }
