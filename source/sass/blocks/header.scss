@@ -27,28 +27,28 @@
   }
 }
 
-.header__logo-mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
+// .header__logo-mobile {
+//   @media (min-width: $tablet-width) {
+//     display: none;
+//   }
+// }
 
-.header__logo-tablet {
-  display: none;
+// .header__logo-tablet {
+//   display: none;
 
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
+//   @media (min-width: $tablet-width) {
+//     display: block;
+//   }
 
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     display: none;
+//   }
+// }
 
-.header__logo-desktop {
-  display: none;
+// .header__logo-desktop {
+//   display: none;
 
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     display: block;
+//   }
+// }
