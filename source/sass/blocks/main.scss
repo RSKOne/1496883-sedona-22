@@ -114,14 +114,31 @@
 }
 
 .main__popup {
+  position: relative;
+  border: 2px solid black;
+
+  &-error,
   &-success {
-    display: none;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
     z-index: 99;
+    background-color: $basicWhite;
+    border: 1px solid black;
   }
 
   &-error {
-    display: none;
-    z-index: 99;
+    height: 280px;
+    width: 320px;
+    top: 1580px;
+    padding: 40px 37px 20px;
+  }
+
+  &-success {
+    height: 323px;
+    width: 320px;
+    top: 1900px;
   }
 }
 

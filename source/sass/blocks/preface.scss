@@ -65,6 +65,23 @@
   }
 }
 
+.preface__message-wrapper {
+  padding: 30px 20px 0;
+}
+
+.preface__button-wrapper {
+  display: block;
+  width: 320px;
+  height: 98px;
+  bottom: 0;
+  background-color: $lightGrey;
+}
+
+.preface__button-success {
+  width: 260px;
+  margin: 20px;
+}
+
 .preface__button {
-  margin-top: 27px;
+  margin-top: 12px;
 }
