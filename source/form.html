@@ -9,9 +9,11 @@
   <body class="page__body">
     <header class="header">
       <a class="header__logo-link header__logo-link--menu-opened" href="index.html">
-        <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
-        <img class="header__logo-tablet" src="img/logotype-tablet.svg.svg" alt="Логотип city of Sedona">
-        <img class="header__logo-desktop" src="img/logotype-desktop.svg.svg" alt="Логотип city of Sedona">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg.svg">
+          <source media="(min-width:768px)" srcset="img/logotype-tablet.svg.svg">
+          <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
+        </picture>
       </a>
       <nav class="navigation navigation--opened">
         <button class="navigation__toggle" type="button">
@@ -138,7 +140,7 @@
         </fieldset>
         <fieldset class="review__comments">
           <legend class="review__legend review__legend--comments">Опишите свои эмоции:</legend>
-          <textarea class="review__textarea" name="comments" cols="10 " rows="7" placeholder="Опишите подробно все свои восторги "></textarea>
+          <textarea class="review__textarea" name="comments" cols="10" rows="7" placeholder="Опишите подробно все свои восторги "></textarea>
         </fieldset>
         <button class="button review__button" type="submit">Отправить отзыв</button>
         <div class="review__required-fields">* — обязательные поля</div>

@@ -9,9 +9,11 @@
   <body class="page__body">
     <header class="header">
       <a class="header__logo-link header__logo-link--menu-opened" href="index.html">
-        <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
-        <img class="header__logo-tablet" src="img/logotype-tablet.svg.svg" alt="Логотип city of Sedona">
-        <img class="header__logo-desktop" src="img/logotype-desktop.svg.svg" alt="Логотип city of Sedona">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg.svg">
+          <source media="(min-width:768px)" srcset="img/logotype-tablet.svg.svg">
+          <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
+        </picture>
       </a>
       <nav class="navigation navigation--opened">
         <button class="navigation__toggle" type="button">
@@ -57,13 +59,13 @@
                   <img class=" biota__image-desktop biota__image-desktop--first" width="1200" height="852" src="img/photo-1-desktop.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
                 </div>
               </a>
-              <div class="biota__figcaption-wrapper">
-                <figcaption class="biota__figcaption">
+              <figcaption class="biota__figcaption">
+                <div class="biota__description-wrapper">
                   <span class="biota__description">Неродные просторы</span>
                   <span class="biota__author">Автор фото: Борис</span>
-                </figcaption>
+                </div>
                 <output class="biota__likes biota__likes--first">1350</output>
-              </div>
+              </figcaption>
             </figure>
           </div>
           <div class="gallery__wrapper">
@@ -74,13 +76,13 @@
                   <img class="biota__image-desktop" src="img/photo-2-desktop.jpg" alt="Местная флора на фоне скал">
                 </div>
               </a>
-              <div class="biota__figcaption-wrapper">
-                <figcaption class="biota__figcaption">
+              <figcaption class="biota__figcaption">
+                <div class="biota__description-wrapper">
                   <span class="biota__description">Местная растительность</span>
                   <span class="biota__author">Автор фото: Сергей</span>
-                </figcaption>
+                </div>
                 <output class="biota__likes">143</output>
-              </div>
+              </figcaption>
             </figure>
           </div>
           <div class="gallery__wrapper">
@@ -91,13 +93,13 @@
                   <img class="biota__image-desktop" src="img/photo-3-desktop.jpg" alt="Серпантин в лесу">
                 </div>
               </a>
-              <div class="biota__figcaption-wrapper">
-                <figcaption class="biota__figcaption">
+              <figcaption class="biota__figcaption">
+                <div class="biota__description-wrapper">
                   <span class="biota__description">Дорога на север</span>
                   <span class="biota__author">Автор фото: Петр</span>
-                </figcaption>
+                </div>
                 <output class="biota__likes">96</output>
-              </div>
+              </figcaption>
             </figure>
           </div>
           <div class="gallery__wrapper">
@@ -108,13 +110,13 @@
                   <img class="biota__image-desktop" src="img/photo-4-desktop.jpg" alt="Мост дьявола на фоне скал">
                 </div>
               </a>
-              <div class="biota__figcaption-wrapper">
-                <figcaption class="biota__figcaption">
+              <figcaption class="biota__figcaption">
+                <div class="biota__description-wrapper">
                   <span class="biota__description">Мост дьявола</span>
                   <span class="biota__author">Автор фото: Антон</span>
-                </figcaption>
+                </div>
                 <output class="biota__likes" name="sum">254</output>
-              </div>
+              </figcaption>
             </figure>
           </div>
         </section>
