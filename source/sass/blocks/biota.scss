@@ -23,8 +23,24 @@
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 11px;
+  margin-top: 12px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    display: flex;
+    height: 80px;
+    background-color: $lightGrey;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-top: -80px;
+    background: rgba(0, 0, 0, 0.3);
+    color: $basicWhite;
+  }
+}
+
+.biota__description-wrapper {
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 15px 20px;

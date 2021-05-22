@@ -114,15 +114,8 @@
 }
 
 .main__popup {
-  &-success {
-    display: none;
-    z-index: 99;
-  }
-
-  &-error {
-    display: none;
-    z-index: 99;
-  }
+  padding: 0;
+  width: 320px;
 }
 
 .main__gallery {
