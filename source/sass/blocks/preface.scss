@@ -4,6 +4,31 @@
   &--video {
     margin-bottom: 40px;
   }
+
+  &--popup-success,
+  &--popup-error {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: $basicWhite;
+    border: 1px solid black;
+  }
+
+  &--popup-error {
+    height: 280px;
+    width: 320px;
+    top: 1580px;
+    padding: 40px 37px 20px;
+  }
+
+  &--popup-success {
+    height: 323px;
+    width: 320px;
+    top: 200px;
+  }
+}
 }
 
 .preface__title {
@@ -70,10 +95,11 @@
 }
 
 .preface__button-wrapper {
+  position: relative;
   display: block;
   width: 320px;
   height: 98px;
-  bottom: 0;
+  margin: 0 20px 10px 0;
   background-color: $lightGrey;
 }
 
