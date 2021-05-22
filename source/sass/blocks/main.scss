@@ -114,8 +114,56 @@
 }
 
 .main__popup {
-  padding: 0;
-  width: 320px;
+  &--error,
+  &--success {
+    display: none;
+    position: absolute;
+    background-color: $basicWhite;
+    z-index: 101;
+    width: 320px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  &--error {
+    height: 280px;
+    bottom: 299px;
+    padding: 24px 55px 35px;
+    z-index: 102;
+
+    @media (min-width: $tablet-width) {
+      width: 400px;
+      height: 347px;
+      bottom: -11px;
+      padding: 35px 47px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -129px;
+      padding: 49px 37px 35px;
+    }
+  }
+
+  &--success {
+    height: 323px;
+    bottom: -95px;
+
+    @media (min-width: $tablet-width) {
+      width: 640px;
+      height: 347px;
+      bottom: 150px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 142px;
+    }
+  }
+}
+
+.main__popup--error.active,
+.main__popup--success.active {
+  display: block;
 }
 
 .main__gallery {
