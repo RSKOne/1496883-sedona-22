@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
       <a class="header__logo-link header__logo-link--menu-opened" href="index.html">
-        <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
-        <img class="header__logo-tablet" src="img/logotype-tablet.svg.svg" alt="Логотип city of Sedona">
-        <img class="header__logo-desktop" src="img/logotype-desktop.svg.svg" alt="Логотип city of Sedona">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg.svg">
+          <source media="(min-width:768px)" srcset="img/logotype-tablet.svg.svg">
+          <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
+        </picture>
       </a>
       <nav class="navigation navigation--opened">
         <button class="navigation__toggle" type="button">
@@ -55,9 +61,12 @@
               <p class="advantages__text advantages__text--light">— №1 —</p>
               <p class="advantages__text advantages__text--light">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <div class="advantages__picture advantages__picture--first">
-              <img class="advantages__picture-first-mobile" width="520" height="260" src="img/photo-city.jpg" alt="Американское ранчо-кафе на фоне гор">
-              <img class="advantages__picture-first-desktop" src="img/photo-city-desktop.jpg" alt="Американское ранчо-кафе на фоне гор">
+            <div class="advantages__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x" alt="Американское ранчо-кафе на фоне гор">
+              </picture>
             </div>
           </section>
           <ul class="advantages__list advantages__list--goodies">
@@ -80,9 +89,12 @@
               <p class="advantages__text advantages__text--light advantages__text--light-second">— №2 —</p>
               <p class="advantages__text advantages__text--light advantages__text--light-second">Да, по нему можно пройти! Если Вы осмелитесь конечно</p>
             </div>
-            <div class="advantages__picture advantages__picture--second">
-              <img class="advantages__picture-second-mobile" width="520" height="260" src="img/photo-bridge.jpg" alt="Дьявольский мост, природное скалообразование в виде моста">
-              <img class="advantages__picture-second-desktop" src="img/photo-bridge-desktop.jpg" alt="Дьявольский мост, природное скалообразование в виде моста">
+            <div class="advantages__image-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__image" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x" alt="Американское ранчо-кафе на фоне гор">
+              </picture>
             </div>
           </section>
           <ul class="advantages__list advantages__list--points">
