@@ -278,7 +278,7 @@
   letter-spacing: -2px;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 0 0 19px;
+    padding: 20px 0 0 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -470,9 +470,11 @@
 }
 
 .review__button {
+  font-size: 21px;
   width: 280px;
   margin: 0 auto;
   letter-spacing: -2px;
+  padding-top: 9px;
 
   @media (min-width: $tablet-width) {
     grid-area: 5 / 1 / 6 / 3;
