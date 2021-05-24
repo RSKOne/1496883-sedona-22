@@ -126,25 +126,6 @@
         top: 9px;
       }
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      top: 62px;
-      right: 8px;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/icons/icon-phone.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      z-index: 3;
-
-      @media (min-width: $desktop-width) {
-        top: 38px;
-        right: 10px;
-      }
-    }
   }
 
   &--contacts-email {
@@ -164,25 +145,36 @@
         right: -4px;
       }
     }
+  }
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 16px;
-      height: 12px;
-      top: 62px;
-      right: 11px;
-      transform: translate(-50%, -50%);
-      background-image: url("../img/icons/icon-mail.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      z-index: 3;
+.review__label-icon-phone {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 62px;
+  right: 8px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 
-      @media (min-width: $desktop-width) {
-        top: 38px;
-        right: 9px;
-      }
-    }
+  @media (min-width: $desktop-width) {
+    top: 38px;
+    right: 10px;
+  }
+}
+
+.review__label-icon-mail {
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  top: 62px;
+  right: 11px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+
+  @media (min-width: $desktop-width) {
+    top: 38px;
+    right: 9px;
   }
 }
 
@@ -751,16 +743,21 @@
   background-color: $midGrey;
 }
 
-.review__spot-checkbox:checked + span::after {
-  content: "";
+.review__label-icon-tick {
   position: absolute;
-  width: 23px;
-  height: 16px;
+  width: 0;
+  height: 0;
+  top: 20px;
+  left: -50px;
+}
+
+.review__spot-checkbox:checked + span + .review__label-icon-tick {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 17px;
   top: 26px;
-  left: -52px;
+  left: -46px;
   transform: translate(-50%, -50%);
-  background-image: url("../img/icons/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: transparent;
+  fill: black;
 }
