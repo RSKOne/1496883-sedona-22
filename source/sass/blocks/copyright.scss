@@ -8,3 +8,12 @@
   line-height: 35px;
   color: $darkText;
 }
+
+.copyright__icon:hover {
+  fill: $basicBlue;
+}
+
+.copyright__icon:focus,
+.copyright__icon:active {
+  opacity: 0.3;
+}

@@ -17,12 +17,39 @@
 
   @media (min-width: $desktop-width) {
     width: 187px;
-    height: 100px;
+    height: 97px;
+    top: -90px;
   }
 
   &--menu-opened {
     @media (max-width: $mobile-width-only) {
       top: 223px;
     }
+  }
+}
+
+.header__logo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
