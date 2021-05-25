@@ -190,4 +190,45 @@
       margin-right: 0;
     }
   }
+
+  &:hover {
+    @media (max-width: $mobile-width-only) {
+      background-color: $midBlue;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-color: $basicWhite;
+      color: $basicBlue;
+    }
+  }
+
+  &:focus,
+  &:active {
+    @media (max-width: $mobile-width-only) {
+      background-color: $darkBlue;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media (min-width: $tablet-width) {
+      background-color: $basicWhite;
+      color: $basicBlack;
+      opacity: 0.3;
+    }
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      color: $brown;
+    }
+  }
+
+  &--active:hover {
+    color: $darkBrown;
+  }
+
+  &--active:focus,
+  &--active:active {
+    color: $brown;
+    opacity: 0.3;
+  }
 }

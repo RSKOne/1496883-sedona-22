@@ -7,4 +7,18 @@
   text-align: center;
   text-transform: uppercase;
   height: 58px;
+
+  &:hover {
+    background-color: $midBlue;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $darkBlue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $midGrey;
+  }
 }
