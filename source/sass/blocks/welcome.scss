@@ -1,6 +1,6 @@
 .welcome {
   position: relative;
-  height: 389px;
+  height: 388px;
   background-color: $basicBlue;
   background-image: url("../img/background/back-mobile.jpg");
   background-repeat: no-repeat;
@@ -27,18 +27,6 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 56px;
-    background-image: url("../img/background/intro-triangle.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
 }
 
 .welcome__image {
@@ -54,4 +42,11 @@
     height: 350px;
     top: -14px;
   }
+}
+
+.welcome__decorative {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
 }
