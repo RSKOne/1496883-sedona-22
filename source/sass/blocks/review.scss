@@ -73,6 +73,7 @@
   }
 
   &--checkbox {
+    width: 250px;
     margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
@@ -134,7 +135,7 @@
       top: 62px;
       right: 8px;
       transform: translate(-50%, -50%);
-      background-image: url("../img/icon-phone.svg");
+      background-image: url("../img/icons/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 3;
@@ -172,7 +173,7 @@
       top: 62px;
       right: 11px;
       transform: translate(-50%, -50%);
-      background-image: url("../img/icon-mail.svg");
+      background-image: url("../img/icons/icon-mail.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 3;
@@ -555,10 +556,15 @@
   position: absolute;
   width: 54px;
   height: 54px;
-  top: -9px;
-  left: -7px;
+  top: -11px;
+  left: -9px;
   border-radius: 100%;
   background-color: $lightGrey;
+
+  @media (min-width: $tablet-width) {
+    top: -9px;
+    left: -7px;
+  }
 
   @media (min-width: $desktop-width) {
     top: -8px;
@@ -580,7 +586,7 @@
   position: absolute;
   width: 21px;
   height: 21px;
-  top: 14px;
+  top: 16px;
   left: 18px;
   transform: translate(-50%, -50%);
   background-color: $darkText;
@@ -753,7 +759,7 @@
   top: 26px;
   left: -52px;
   transform: translate(-50%, -50%);
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/icons/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;

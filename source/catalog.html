@@ -10,9 +10,9 @@
     <header class="header">
       <a class="header__logo-link header__logo-link--menu-opened" href="index.html">
         <picture>
-          <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg.svg">
-          <source media="(min-width:768px)" srcset="img/logotype-tablet.svg.svg">
-          <img class="header__logo-mobile" src="img/logotype-mobile.svg.svg" alt="Логотип city of Sedona">
+          <source media="(min-width:1200px)" srcset="img/logo/logotype-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo/logotype-tablet.svg">
+          <img class="header__logo-mobile" src="img/logo/logotype-mobile.svg" alt="Логотип city of Sedona">
         </picture>
       </a>
       <nav class="navigation navigation--opened">
@@ -39,7 +39,7 @@
       <div class="main__welcome-inner">
         <section class="welcome-inner">
           <h1 class="visually-hidden">Фотографии и видео Седоны и её окрестностей</h1>
-          <img class="welcome__image-inner" src="img/sedona.svg" alt="Надпись Седона">
+          <img class="welcome__image-inner" src="img/background/back-text--inner.svg" alt="Надпись Седона">
         </section>
       </div>
       <div class="main__preface main__preface--gallery">
@@ -55,8 +55,11 @@
             <figure class="biota">
               <a class="biota__link" href="">
                 <div class="biota__image-wrapper">
-                  <img class="biota__image-mobile" src="img/photo-1-mobile.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
-                  <img class=" biota__image-desktop biota__image-desktop--first" width="1200" height="852" src="img/photo-1-desktop.jpg" alt="Песочно-оранжевый закат, дорога и горы на горизонте. ">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photos/photo-1-desktop.jpg 1x, img/photos/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photos/photo-1-tablet.jpg 1x, img/photos/photo-1-tablet@2x.jpg 2x">
+                    <img class="advantages__image" src="img/photos/photo-1-mobile.jpg" srcset="img/photos/photo-1-mobile@2x.jpg 2x" alt="Песочно-оранжевый закат, дорога и горы на горизонте">
+                  </picture>
                 </div>
               </a>
               <figcaption class="biota__figcaption">
@@ -72,8 +75,11 @@
             <figure class="biota">
               <a class="biota__link" href="">
                 <div class="biota__image-wrapper">
-                  <img class="biota__image-mobile" src="img/photo-2-mobile.jpg" alt="Местная флора на фоне скал">
-                  <img class="biota__image-desktop" src="img/photo-2-desktop.jpg" alt="Местная флора на фоне скал">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photos/photo-2-desktop.jpg 1x, img/photos/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photos/photo-2-tablet.jpg 1x, img/photos/photo-2-tablet@2x.jpg 2x">
+                    <img class="advantages__image" src="img/photos/photo-2-mobile.jpg" srcset="img/photos/photo-2-mobile@2x.jpg 2x" alt="Местная флора на фоне скал">
+                  </picture>
                 </div>
               </a>
               <figcaption class="biota__figcaption">
@@ -89,8 +95,11 @@
             <figure class="biota">
               <a class="biota__link" href="">
                 <div class="biota__image-wrapper gallery__wrapper--rest">
-                  <img class="biota__image-mobile" src="img/photo-3-mobile.jpg" alt="Серпантин в лесу">
-                  <img class="biota__image-desktop" src="img/photo-3-desktop.jpg" alt="Серпантин в лесу">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photos/photo-3-desktop.jpg 1x, img/photos/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photos/photo-3-tablet.jpg 1x, img/photos/photo-3-tablet@2x.jpg 2x">
+                    <img class="advantages__image" src="img/photos/photo-3-mobile.jpg" srcset="img/photos/photo-3-mobile@2x.jpg 2x" alt="Серпантин в лесу">
+                  </picture>
                 </div>
               </a>
               <figcaption class="biota__figcaption">
@@ -106,8 +115,11 @@
             <figure class="biota">
               <a class="biota__link" href="">
                 <div class="biota__image-wrapper gallery__wrapper--rest">
-                  <img class="biota__image-mobile" src="img/photo-4-mobile.jpg" alt="Мост дьявола на фоне скал">
-                  <img class="biota__image-desktop" src="img/photo-4-desktop.jpg" alt="Мост дьявола на фоне скал">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photos/photo-4-desktop.jpg 1x, img/photos/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photos/photo-4-tablet.jpg 1x, img/photos/photo-4-tablet@2x.jpg 2x">
+                    <img class="advantages__image" src="img/photos/photo-4-mobile.jpg" srcset="img/photos/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола на фоне скал">
+                  </picture>
                 </div>
               </a>
               <figcaption class="biota__figcaption">
@@ -128,8 +140,11 @@
       <section class="main__presentation">
         <h2 class="visually-hidden">Видеопрезентация Седоны</h2>
         <div class="main__presentation-video">
-          <img class="main__presentation-img-mobile" src="img/video-mobile.jpg" alt="Дорога между гор">
-          <img class="main__presentation-img-desktop" src="img/video-desktop.jpg" alt="Дорога между гор">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photos/video-desktop.jpg 1x, img/photos/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photos/video-tablet.jpg 1x, img/photos/video-tablet@2x.jpg 2x">
+            <img class="advantages__image" src="img/photos/video-mobile.jpg" srcset="img/photos/video-mobile@2x.jpg 2x" alt="Дорога между гор">
+          </picture>
         </div>
         <div class="main__presentation-toggle-container">
           <div class="main__presentation-toggle-main">
@@ -158,7 +173,7 @@
         </section>
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
-          <img src="img/htmlacademy.svg.svg" alt="Логотип htmlacademy">
+          <img src="img/icons/icon-htmlacademy.svg" alt="Логотип htmlacademy">
         </div>
       </div>
     </footer>
