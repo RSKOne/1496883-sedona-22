@@ -51,10 +51,12 @@
 .advantages__content--first {
   position: relative;
   padding: 68px 15px 29px;
+  height: 226px;
 
   @media (min-width: $tablet-width) {
     padding: 41px 20px 20px;
     min-width: 255px;
+    height: 256px;
   }
 
   & > :nth-child(3) {
@@ -186,13 +188,15 @@
   list-style: none;
   margin: 0;
   padding: 36px 21px 24px 20px;
+  height: 416px;
 
   &--points {
     width: 100%;
     max-width: 520px;
     background-color: $bgGrey;
     text-align: center;
-    padding: 26px 20px 0;
+    padding: 25px 20px 0;
+    height: 504px;
   }
 
   @media (min-width: $tablet-width) {
@@ -202,6 +206,7 @@
     padding: 0;
     max-width: 1032px;
     margin: 0 auto;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {

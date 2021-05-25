@@ -30,6 +30,7 @@
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -73,17 +74,19 @@
   }
 
   &--checkbox {
-    width: 250px;
+    width: 275px;
     margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
-      width: 400px;
-      padding: 0 50px;
+      width: 644px;
+      padding: 0 186px;
       margin: 0 0 44px 0;
     }
 
     @media (min-width: $desktop-width) {
       margin: 0 0 21px 0;
+      width: 960px;
+      padding: 0 300px;
     }
   }
 
