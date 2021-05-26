@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin>
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
     <link rel="manifest" href="img/favicons/site.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -46,7 +48,10 @@
         <section class="welcome">
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
           <svg class="welcome__image" width="282" height="241" aria-label="Добро пожаловать в восхитительную Седону, потому что Гранд-Каньон отстой!">
-            <use href="img/sprite.svg#back-text--inner"></use>
+            <use href="img/sprite.svg#back-text-index"></use>
+          </svg>
+          <svg class="welcome__decorative" width="1200" height="57" preserveAspectRatio="xMidYMax meet" aria-label="decorative stripes">
+            <use href="img/sprite.svg#back-triangle"></use>
           </svg>
         </section>
       </div>
@@ -60,6 +65,9 @@
         <section class="advantages">
           <h2 class="visually-hidden">Приемущества Седоны</h2>
           <section class="advantages__section">
+            <svg class="content__decorative" width="320" height="37" aria-label="decorative stripes">
+              <use href="img/sprite.svg#content-triangle"></use>
+            </svg>
             <h3 class="visually-hidden">Настоящий город</h3>
             <div class="advantages__content advantages__content--first">
               <p class="advantages__title advantages__title--light">Настоящий<br> городок</p>

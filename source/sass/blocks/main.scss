@@ -2,7 +2,7 @@
   min-width: 320px;
   max-width: 520px;
   min-height: 205px;
-  padding: 16px 25px;
+  padding: 18px 25px 13px;
   margin: 0 auto;
   text-align: center;
 
@@ -293,13 +293,13 @@
   position: absolute;
   width: 16px;
   height: 20px;
-  top: 65px;
-  left: 17px;
+  top: 67px;
+  left: 24px;
   fill: $oneMoreGrey;
 
   @media (min-width: $tablet-width) {
     top: 35px;
-    left: 30px;
+    left: 34px;
     fill: $basicWhite;
   }
 }
@@ -316,6 +316,10 @@
     top: 36px;
     right: 92px;
     fill: $basicWhite;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 94px;
   }
 }
 

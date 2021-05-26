@@ -6,6 +6,8 @@
 }
 
 .advantages__section {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     max-width: 1032px;
@@ -31,27 +33,30 @@
   }
 }
 
-.advantages__content--first {
-  position: relative;
-  padding: 68px 15px 25px;
+.content__decorative {
+  display: none;
 
   @media (max-width: $mobile-width-only) {
-    &::before {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      left: 0;
-      height: 35px;
-      background-image: url("../img/content-triangle.svg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 17px;
+    left: 50%;
+    height: 37px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
   }
+}
+
+.advantages__content--first {
+  position: relative;
+  padding: 68px 15px 29px;
+  height: 226px;
 
   @media (min-width: $tablet-width) {
     padding: 41px 20px 20px;
     min-width: 255px;
+    height: 256px;
   }
 
   & > :nth-child(3) {
@@ -182,7 +187,8 @@
 .advantages__list {
   list-style: none;
   margin: 0;
-  padding: 36px 21px 27px 20px;
+  padding: 36px 21px 24px 20px;
+  height: 416px;
 
   &--points {
     width: 100%;
@@ -190,6 +196,7 @@
     background-color: $bgGrey;
     text-align: center;
     padding: 25px 20px 0;
+    height: 504px;
   }
 
   @media (min-width: $tablet-width) {
@@ -199,6 +206,7 @@
     padding: 0;
     max-width: 1032px;
     margin: 0 auto;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -256,9 +264,9 @@
     transform: translate(-50%, -50%);
 
     @media (min-width: $tablet-width) {
-      width: 64px;
-      height: 75px;
-      top: 25%;
+      width: 75px;
+      height: 71px;
+      top: 30%;
       left: 50%;
     }
   }
@@ -267,14 +275,14 @@
     position: absolute;
     width: 39px;
     height: 37px;
-    top: 5px;
-    left: 17px;
+    top: 8px;
+    left: 20px;
     transform: translate(-50%, -50%);
 
     @media (min-width: $tablet-width) {
-      width: 64px;
-      height: 75px;
-      top: 25%;
+      width: 75px;
+      height: 71px;
+      top: 30%;
       left: 50%;
     }
   }
@@ -289,14 +297,14 @@
     position: absolute;
     width: 39px;
     height: 37px;
-    top: 5px;
-    left: 17px;
+    top: 14px;
+    left: 18px;
     transform: translate(-50%, -50%);
 
     @media (min-width: $tablet-width) {
-      width: 64px;
-      height: 75px;
-      top: 25%;
+      width: 75px;
+      height: 71px;
+      top: 30%;
       left: 50%;
     }
   }

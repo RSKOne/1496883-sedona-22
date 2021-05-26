@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -43,6 +49,9 @@
           <h1 class="visually-hidden">Фотографии и видео Седоны и её окрестностей</h1>
           <svg class="welcome__image-inner" width="229" height="39" aria-label="Надпись Седона">
             <use href="img/sprite.svg#back-text--inner"></use>
+          </svg>
+          <svg class="welcome__decorative-inner" width="1200" height="57" aria-label="decorative stripes">
+            <use href="img/sprite.svg#back-triangle"></use>
           </svg>
         </section>
       </div>
