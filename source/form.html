@@ -44,17 +44,15 @@
       </nav>
     </header>
     <main class="main">
-      <div class="main__welcome-inner">
-        <section class="welcome-inner">
-          <h1 class="visually-hidden">Фотографии и видео Седоны и её окрестностей</h1>
-          <svg class="welcome__image-inner" width="229" height="39" aria-label="Надпись Седона">
-            <use href="img/sprite.svg#back-text--inner"></use>
-          </svg>
-          <svg class="welcome__decorative-inner" width="1200" height="57" aria-label="decorative stripes">
-            <use href="img/sprite.svg#back-triangle"></use>
-          </svg>
-        </section>
-      </div>
+      <section class="welcome-inner">
+        <h1 class="visually-hidden">Фотографии и видео Седоны и её окрестностей</h1>
+        <svg class="welcome__inner-image" width="229" height="39" aria-label="Надпись Седона">
+          <use href="img/sprite.svg#back-text--inner"></use>
+        </svg>
+        <svg class="welcome__inner-decorative" width="1200" height="57" aria-label="decorative stripes">
+          <use href="img/sprite.svg#back-triangle"></use>
+        </svg>
+      </section>
       <div class="main__preface main__preface--form">
         <section class="preface">
           <h2 class="preface__title preface__title--form">Оставьте свой отзыв</h2>
@@ -117,21 +115,19 @@
           </div>
         </fieldset>
         <div class="main__popup main__popup--error">
-          <div class="preface preface--popup-error">
-            <p class="preface__title preface__title--popup preface__title--popup-error">Что-то пошло не так!</p>
+          <section class="preface preface--popup-error">
+            <h2 class="preface__title preface__title--popup preface__title--popup-error">Что-то пошло не так!</h2>
             <p class="preface__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             <button class="preface__button-error button">Ок</button>
-          </div>
+          </section>
         </div>
         <div class="main__popup main__popup--success">
-          <div class="preface preface--popup-success">
-            <div class="preface__message-wrapper">
-              <p class="preface__title preface__title--popup preface__title--popup-success">Ваш отзыв отправлен!</p>
-              <p class="preface__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-            </div>
-            <div class="preface__button-wrapper">
-              <button class="preface__button-success button">Закрыть окно</button>
-            </div>
+          <section class="preface preface--popup-success">
+            <h2 class="preface__title preface__title--popup preface__title--popup-success">Ваш отзыв отправлен!</h2>
+            <p class="preface__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          </section>
+          <div class="preface__button-wrapper">
+            <button class="preface__button-success button">Закрыть окно</button>
           </div>
         </div>
         <fieldset class="review__places">

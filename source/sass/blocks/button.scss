@@ -1,12 +1,13 @@
 .button {
-  background-color: $basicBlue;
-  border: none;
-  line-height: 26px;
+  font-family: inherit;
   font-weight: bold;
   color: $basicWhite;
-  text-align: center;
+  line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
   height: 58px;
+  background-color: $basicBlue;
+  border: none;
 
   &:hover {
     background-color: $midBlue;

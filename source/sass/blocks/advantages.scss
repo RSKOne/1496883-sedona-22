@@ -33,7 +33,7 @@
   }
 }
 
-.content__decorative {
+.advantages__content-decorative {
   display: none;
 
   @media (max-width: $mobile-width-only) {
@@ -110,7 +110,7 @@
 }
 
 .advantages__title {
-  font-size: inherit;
+  font-size: 21px;
   font-weight: bold;
   margin: 0;
   line-height: 26px;
@@ -123,10 +123,6 @@
         display: none;
       }
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    letter-spacing: 1.9px;
   }
 
   &--points {
