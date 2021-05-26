@@ -48,11 +48,11 @@
     }
   }
 
-  &--message-wrapper {
+  &--popup-success {
     padding: 20px 40px 36px;
 
     @media (min-width: $tablet-width) {
-      padding: 53px 110px 44px;
+      padding: 53px 110px 29px;
     }
   }
 }
@@ -143,25 +143,24 @@
 
   @media (min-width: $tablet-width) {
     height: 146px;
+    margin-top: 12px;
   }
 }
 
 .preface__button-success {
-  font-size: 18px;
+  font-size: 21px;
   width: 280px;
   margin: 20px;
   padding-top: 6px;
-  letter-spacing: -1.5px;
 
   @media (min-width: $tablet-width) {
     width: 458px;
-    margin: 40px;
-    letter-spacing: 0.5px;
+    margin: 43px 90px;
   }
 }
 
 .preface__button-error {
-  font-size: 18px;
+  font-size: 21px;
   width: 180px;
   margin-top: 22px;
 

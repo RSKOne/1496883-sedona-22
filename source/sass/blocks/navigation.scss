@@ -117,11 +117,11 @@
 }
 
 .navigation__link {
-  height: 56px;
   padding-top: 16px;
   color: $basicWhite;
   position: relative;
   letter-spacing: 2.2px;
+  min-height: 56px;
 
   @media (max-width: $mobile-width-only) {
     display: block;
