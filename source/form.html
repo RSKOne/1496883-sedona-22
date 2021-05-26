@@ -13,210 +13,208 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
-    <header class="header">
-      <a class="header__logo-link header__logo-link--menu-opened" href="index.html" aria-label="Логотип city of Sedona">
-        <svg width="102" height="84">
-          <use class="header__logo-mobile" href="img/sprite.svg#logotype-mobile"></use>
-          <use class="header__logo-tablet" href="img/sprite.svg#logotype-tablet"></use>
-        </svg>
-        <svg width="187" height="97">
-          <use class="header__logo-desktop" href="img/sprite.svg#logotype-desktop"></use>
-        </svg>
-      </a>
-      <nav class="navigation navigation--opened">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--first" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--second" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--third">Форма отзыва</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--fourth" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="main__welcome-inner">
+    <div class="page__body-container">
+      <header class="header">
+        <a class="header__logo-link header__logo-link--menu-opened" href="index.html" aria-label="Логотип city of Sedona">
+          <svg width="102" height="84">
+            <use class="header__logo-mobile" href="img/sprite.svg#logotype-mobile"></use>
+            <use class="header__logo-tablet" href="img/sprite.svg#logotype-tablet"></use>
+          </svg>
+          <svg width="187" height="97">
+            <use class="header__logo-desktop" href="img/sprite.svg#logotype-desktop"></use>
+          </svg>
+        </a>
+        <nav class="navigation navigation--opened">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--first" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--second" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--third navigation__link--active">Форма отзыва</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--fourth" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
         <section class="welcome-inner">
           <h1 class="visually-hidden">Фотографии и видео Седоны и её окрестностей</h1>
-          <svg class="welcome__image-inner" width="229" height="39" aria-label="Надпись Седона">
+          <svg class="welcome__inner-image" width="229" height="39" aria-label="Надпись Седона">
             <use href="img/sprite.svg#back-text--inner"></use>
           </svg>
-          <svg class="welcome__decorative-inner" width="1200" height="57" aria-label="decorative stripes">
+          <svg class="welcome__inner-decorative" width="1200" height="57" aria-label="decorative stripes">
             <use href="img/sprite.svg#back-triangle"></use>
           </svg>
         </section>
-      </div>
-      <div class="main__preface main__preface--form">
-        <section class="preface">
-          <h2 class="preface__title preface__title--form">Оставьте свой отзыв</h2>
-          <p class="preface__text preface__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </section>
-      </div>
-      <form class="review" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="review__name">
-          <legend class="review__legend review__legend--name">Представьтесь:</legend>
-          <label class="review__label">
-            <span class="review__label-text review__label-text--name">Имя*:</span>
-            <input class="review__input" type="text" name="first-name" placeholder="Петр" required>
-          </label>
-          <label class="review__label">
-            <span class="review__label-text review__label-text--name">Фамилия*:</span>
-            <input class="review__input" type="text" name="last-name" placeholder="Иванов" required>
-          </label>
-          <label class="review__label">
-            <span class="review__label-text review__label-text--name">Отчество:</span>
-            <input class="review__input" type="text" name="patronymic" placeholder="Александрович">
-          </label>
-        </fieldset>
-        <fieldset class="review__contacts">
-          <legend class="review__legend review__legend--contacts">Контактная информация:</legend>
-          <label class="review__label review__label--contacts review__label--contacts-phone">
-            <span class="review__label-text review__label-text--contacts review__label-text--contacts-mobile">Контактный телефон*:</span>
-            <span class="review__label-text review__label-text--contacts review__label-text--contacts-desktop">Телефон*:</span>
-            <input class="review__input review__input--contacts review__input--contacts-phone" type="tel" name="phone" placeholder="Введите телефон" required>
-            <svg class="review__label-icon-phone" width="18" height="18">
-              <use href="img/sprite.svg#icon-phone"></use>
-            </svg>
-          </label>
-          <label class="review__label review__label--contacts review__label--contacts-email">
-            <span class="review__label-text review__label-text--contacts">Электронная почта*:</span>
-            <input class="review__input review__input--contacts" type="email" name="email" placeholder="Введите e-mail" required>
-            <svg class="review__label-icon-mail" width="16" height="12">
-              <use href="img/sprite.svg#icon-mail"></use>
-            </svg>
-          </label>
-        </fieldset>
-        <fieldset class="review__impressions">
-          <legend class="review__legend review__legend--radio">Ваше Общее впечатление:</legend>
-          <div class="review__radio-item">
-            <label class="review__label review__label--radio">
-              <input class="review__radio-button" type="radio" name="choosed" value="good" checked>
-              <span class="review__label-text review__label-text--radio">Скорее положительное</span>
-            </label>
-          </div>
-          <div class="review__radio-item">
-            <label class="review__label review__label--radio">
-              <input class="review__radio-button" type="radio" name="choosed" value="bad">
-              <span class="review__label-text review__label-text--radio">Скорее отрицательное</span>
-            </label>
-          </div>
-          <div class="review__radio-item">
-            <label class="review__label review__label--radio">
-              <input class="review__radio-button" type="radio" name="choosed" value="hard to say">
-              <span class="review__label-text review__label-text--radio">Затрудняюсь ответить</span>
-            </label>
-          </div>
-        </fieldset>
-        <div class="main__popup main__popup--error">
-          <div class="preface preface--popup-error">
-            <p class="preface__title preface__title--popup preface__title--popup-error">Что-то пошло не так!</p>
-            <p class="preface__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="preface__button-error button">Ок</button>
-          </div>
+        <div class="main__preface main__preface--form">
+          <section class="preface">
+            <h2 class="preface__title preface__title--form">Оставьте свой отзыв</h2>
+            <p class="preface__text preface__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </section>
         </div>
-        <div class="main__popup main__popup--success">
-          <div class="preface preface--popup-success">
-            <div class="preface__message-wrapper">
-              <p class="preface__title preface__title--popup preface__title--popup-success">Ваш отзыв отправлен!</p>
-              <p class="preface__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <form class="review" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="review__name">
+            <legend class="review__legend review__legend--name">Представьтесь:</legend>
+            <label class="review__label">
+              <span class="review__label-text review__label-text--name">Имя*:</span>
+              <input class="review__input" type="text" name="first-name" placeholder="Петр" required>
+            </label>
+            <label class="review__label">
+              <span class="review__label-text review__label-text--name">Фамилия*:</span>
+              <input class="review__input" type="text" name="last-name" placeholder="Иванов" required>
+            </label>
+            <label class="review__label">
+              <span class="review__label-text review__label-text--name">Отчество:</span>
+              <input class="review__input" type="text" name="patronymic" placeholder="Александрович">
+            </label>
+          </fieldset>
+          <fieldset class="review__contacts">
+            <legend class="review__legend review__legend--contacts">Контактная информация:</legend>
+            <label class="review__label review__label--contacts review__label--contacts-phone">
+              <span class="review__label-text review__label-text--contacts review__label-text--contacts-mobile">Контактный телефон*:</span>
+              <span class="review__label-text review__label-text--contacts review__label-text--contacts-desktop">Телефон*:</span>
+              <input class="review__input review__input--contacts review__input--contacts-phone" type="tel" name="phone" placeholder="Введите телефон" required>
+              <svg class="review__label-icon-phone" width="18" height="18">
+                <use href="img/sprite.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label class="review__label review__label--contacts review__label--contacts-email">
+              <span class="review__label-text review__label-text--contacts">Электронная почта*:</span>
+              <input class="review__input review__input--contacts" type="email" name="email" placeholder="Введите e-mail" required>
+              <svg class="review__label-icon-mail" width="16" height="12">
+                <use href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </label>
+          </fieldset>
+          <fieldset class="review__impressions">
+            <legend class="review__legend review__legend--radio">Ваше Общее впечатление:</legend>
+            <div class="review__radio-item">
+              <label class="review__label review__label--radio">
+                <input class="review__radio-button" type="radio" name="choosed" value="good" checked>
+                <span class="review__label-text review__label-text--radio">Скорее положительное</span>
+              </label>
             </div>
+            <div class="review__radio-item">
+              <label class="review__label review__label--radio">
+                <input class="review__radio-button" type="radio" name="choosed" value="bad">
+                <span class="review__label-text review__label-text--radio">Скорее отрицательное</span>
+              </label>
+            </div>
+            <div class="review__radio-item">
+              <label class="review__label review__label--radio">
+                <input class="review__radio-button" type="radio" name="choosed" value="hard to say">
+                <span class="review__label-text review__label-text--radio">Затрудняюсь ответить</span>
+              </label>
+            </div>
+          </fieldset>
+          <div class="main__popup main__popup--error">
+            <section class="preface preface--popup-error">
+              <h2 class="preface__title preface__title--popup preface__title--popup-error">Что-то пошло не так!</h2>
+              <p class="preface__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+              <button class="preface__button-error button">Ок</button>
+            </section>
+          </div>
+          <div class="main__popup main__popup--success">
+            <section class="preface preface--popup-success">
+              <h2 class="preface__title preface__title--popup preface__title--popup-success">Ваш отзыв отправлен!</h2>
+              <p class="preface__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+            </section>
             <div class="preface__button-wrapper">
               <button class="preface__button-success button">Закрыть окно</button>
             </div>
           </div>
+          <fieldset class="review__places">
+            <legend class="review__legend review__legend--checkbox">Посещенные достопримечательности:</legend>
+            <div class="review__spot-item">
+              <label class="review__label review__label--checkbox">
+                <input class="review__spot-checkbox" type="checkbox" name="Devil's bridge" checked>
+                <span class="review__label-text review__label-text--checkbox">Мост Дьявола</span>
+                <svg fill="transparent" class="review__label-icon-tick" width="0" height="0">
+                  <use href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="review__spot-item">
+              <label class="review__label review__label--checkbox">
+                <input class="review__spot-checkbox" type="checkbox" name="Hill of the bell" checked>
+                <span class="review__label-text review__label-text--checkbox">Гора-Колокол</span>
+                <svg fill="transparent" class="review__label-icon-tick" width="0" height="0">
+                  <use href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="review__spot-item">
+              <label class="review__label review__label--checkbox">
+                <input class="review__spot-checkbox" type="checkbox" name="Slide park" checked>
+                <span class="review__label-text review__label-text--checkbox">Слайд-парк</span>
+                <svg fill="transparent" class="review__label-icon-tick" width="0" height="0">
+                  <use href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="review__spot-item">
+              <label class="review__label review__label--checkbox">
+                <input class="review__spot-checkbox" type="checkbox" name="Red rocks">
+                <span class="review__label-text review__label-text--checkbox">Красные скалы</span>
+                <svg fill="transparent" class="review__label-icon-tick" width="0" height="0">
+                  <use href="img/sprite.svg#icon-tick"></use>
+                </svg>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="review__comments">
+            <legend class="review__legend review__legend--comments">Опишите свои эмоции:</legend>
+            <textarea class="review__textarea" name="comments" cols="10" rows="7" placeholder="Опишите подробно все свои восторги "></textarea>
+          </fieldset>
+          <button class="button review__button" type="submit">Отправить отзыв</button>
+          <div class="review__required-fields">* — обязательные поля</div>
+        </form>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="hashtag">#visitsedona</div>
+          <section class="social-networks">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
+            <ul class="social-networks__list">
+              <li class="social-networks__item">
+                <a class="social-networks__link social-networks__link--twitter" href="https://www.twitter.com" aria-label="Twitter">
+                  <svg width="18" height="15">
+                    <use href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a class="social-networks__link social-networks__link--facebook" href="https://www.facebook.com" aria-label="Facebook">
+                  <svg width="9" height="19">
+                    <use href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a class="social-networks__link social-networks__link--youtube" href="https://www.youtube.com" aria-label="YouTube">
+                  <svg width="20" height="14">
+                    <use href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <div class="copyright">
+            <span class="copyright__text">Разработано</span>
+            <svg class="copyright__icon" width="39" height="37" tabindex="0" aria-label="Логотип htmlacademy">
+              <use href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
+          </div>
         </div>
-        <fieldset class="review__places">
-          <legend class="review__legend review__legend--checkbox">Посещенные достопримечательности:</legend>
-          <div class="review__spot-item">
-            <label class="review__label review__label--checkbox">
-              <input class="review__spot-checkbox" type="checkbox" name="Devil's bridge" checked>
-              <span class="review__label-text review__label-text--checkbox">Мост Дьявола</span>
-              <svg fill="transparent" class="review__label-icon-tick" width="0" height="0">
-                <use href="img/sprite.svg#icon-tick"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="review__spot-item">
-            <label class="review__label review__label--checkbox">
-              <input class="review__spot-checkbox" type="checkbox" name="Hill of the bell" checked>
-              <span class="review__label-text review__label-text--checkbox">Гора-Колокол</span>
-              <svg fill="transparent" class="review__label-icon-tick" width="0" height="0">
-                <use href="img/sprite.svg#icon-tick"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="review__spot-item">
-            <label class="review__label review__label--checkbox">
-              <input class="review__spot-checkbox" type="checkbox" name="Slide park" checked>
-              <span class="review__label-text review__label-text--checkbox">Слайд-парк</span>
-              <svg fill="transparent" class="review__label-icon-tick" width="0" height="0">
-                <use href="img/sprite.svg#icon-tick"></use>
-              </svg>
-            </label>
-          </div>
-          <div class="review__spot-item">
-            <label class="review__label review__label--checkbox">
-              <input class="review__spot-checkbox" type="checkbox" name="Red rocks">
-              <span class="review__label-text review__label-text--checkbox">Красные скалы</span>
-              <svg fill="transparent" class="review__label-icon-tick" width="0" height="0">
-                <use href="img/sprite.svg#icon-tick"></use>
-              </svg>
-            </label>
-          </div>
-        </fieldset>
-        <fieldset class="review__comments">
-          <legend class="review__legend review__legend--comments">Опишите свои эмоции:</legend>
-          <textarea class="review__textarea" name="comments" cols="10" rows="7" placeholder="Опишите подробно все свои восторги "></textarea>
-        </fieldset>
-        <button class="button review__button" type="submit">Отправить отзыв</button>
-        <div class="review__required-fields">* — обязательные поля</div>
-      </form>
-    </main>
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="hashtag">#visitsedona</div>
-        <section class="social-networks">
-          <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul class="social-networks__list">
-            <li class="social-networks__item">
-              <a class="social-networks__link social-networks__link--twitter" href="https://www.twitter.com" aria-label="Twitter">
-                <svg width="18" height="15">
-                  <use href="img/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item">
-              <a class="social-networks__link social-networks__link--facebook" href="https://www.facebook.com" aria-label="Facebook">
-                <svg width="9" height="19">
-                  <use href="img/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks__item">
-              <a class="social-networks__link social-networks__link--youtube" href="https://www.youtube.com" aria-label="YouTube">
-                <svg width="20" height="14">
-                  <use href="img/sprite.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <div class="copyright">
-          <span class="copyright__text">Разработано</span>
-          <svg class="copyright__icon" width="39" height="37" aria-label="Логотип htmlacademy">
-            <use href="img/sprite.svg#icon-htmlacademy"></use>
-          </svg>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
